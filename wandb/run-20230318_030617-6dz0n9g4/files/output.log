@@ -1,0 +1,113 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 1)])
+      (q): GConvSE3Partial(structure=[(8, 1)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (9, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=8, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(72, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(72, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+384_20_batch32_att_6_8
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[0|0] loss: 2.71420
+training one epoch costs:29.276851654052734s
+...[0|test] loss: 1.76224
+Acc is {'acc': 0.4201388888888889}
+Inference costs:3.5163981914520264s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[1|0] loss: 1.96345
+training one epoch costs:28.27979612350464s
+...[1|test] loss: 1.62625
+Acc is {'acc': 0.4409722222222222}
+Inference costs:3.464822769165039s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[2|0] loss: 1.56661
+training one epoch costs:28.11032009124756s
+...[2|test] loss: 1.51027
+Acc is {'acc': 0.4548611111111111}
+Inference costs:3.454289674758911s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[3|0] loss: 1.70676
+training one epoch costs:28.30959177017212s
+...[3|test] loss: 1.48861
+Acc is {'acc': 0.484375}
+Inference costs:3.507240056991577s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[4|0] loss: 1.54625
+training one epoch costs:28.31305480003357s
+...[4|test] loss: 1.52946
+Acc is {'acc': 0.4513888888888889}
+Inference costs:3.52828311920166s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[5|0] loss: 1.44930
+training one epoch costs:28.262626886367798s
+...[5|test] loss: 1.39081
+Acc is {'acc': 0.5416666666666666}
+Inference costs:3.5128090381622314s
+Saved: models/pc3d384_20_batch32_att_6_8.pt
+[6|0] loss: 1.20342
+training one epoch costs:28.19503664970398s
+...[6|test] loss: 1.32047
+Acc is {'acc': 0.5659722222222222}
+Inference costs:3.479565143585205s
+Saved: models/pc3d384_20_batch32_att_6_8.pt

@@ -1,0 +1,494 @@
+2023-03-23 01:01:16,370 INFO    StreamThr :416043 [internal.py:wandb_internal():87] W&B internal server running at pid: 416043, started at: 2023-03-23 01:01:16.370705
+2023-03-23 01:01:16,372 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status
+2023-03-23 01:01:16,375 INFO    WriterThread:416043 [datastore.py:open_for_write():85] open: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/run-d1xrjcu9.wandb
+2023-03-23 01:01:16,375 DEBUG   SenderThread:416043 [sender.py:send():336] send: header
+2023-03-23 01:01:16,375 DEBUG   SenderThread:416043 [sender.py:send():336] send: run
+2023-03-23 01:01:16,573 INFO    SenderThread:416043 [dir_watcher.py:__init__():216] watching files in: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files
+2023-03-23 01:01:16,573 INFO    SenderThread:416043 [sender.py:_start_run_threads():1067] run started: d1xrjcu9 with start time 1679547676.371355
+2023-03-23 01:01:16,573 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:16,573 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:16,575 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: check_version
+2023-03-23 01:01:16,575 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: check_version
+2023-03-23 01:01:16,644 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: run_start
+2023-03-23 01:01:16,649 DEBUG   HandlerThread:416043 [system_info.py:__init__():31] System info init
+2023-03-23 01:01:16,649 DEBUG   HandlerThread:416043 [system_info.py:__init__():46] System info init done
+2023-03-23 01:01:16,649 INFO    HandlerThread:416043 [system_monitor.py:start():151] Starting system monitor
+2023-03-23 01:01:16,650 INFO    SystemMonitor:416043 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-23 01:01:16,650 INFO    HandlerThread:416043 [system_monitor.py:probe():172] Collecting system info
+2023-03-23 01:01:16,650 INFO    SystemMonitor:416043 [interfaces.py:start():168] Started cpu
+2023-03-23 01:01:16,650 INFO    SystemMonitor:416043 [interfaces.py:start():168] Started disk
+2023-03-23 01:01:16,651 INFO    SystemMonitor:416043 [interfaces.py:start():168] Started gpu
+2023-03-23 01:01:16,651 INFO    SystemMonitor:416043 [interfaces.py:start():168] Started memory
+2023-03-23 01:01:16,652 INFO    SystemMonitor:416043 [interfaces.py:start():168] Started network
+2023-03-23 01:01:16,661 DEBUG   HandlerThread:416043 [system_info.py:probe():195] Probing system
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [git.py:repo():40] git repository is invalid
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [system_info.py:probe():241] Probing system done
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [system_monitor.py:probe():181] {'os': 'Linux-5.19.0-35-generic-x86_64-with-glibc2.35', 'python': '3.10.9', 'heartbeatAt': '2023-03-23T05:01:16.661460', 'startedAt': '2023-03-23T05:01:16.366286', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/sssak/EquivPerformer/pccls_run.py', 'codePath': 'pccls_run.py', 'host': 'sssak-MS-7B17', 'username': 'sssak', 'executable': '/home/sssak/anaconda3/envs/cuda/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 4.24425, 'min': 800.0, 'max': 5000.0}, 'cpu_freq_per_core': [{'current': 4.808, 'min': 800.0, 'max': 5000.0}, {'current': 4.932, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 4.805, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 4.999, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 4.952, 'min': 800.0, 'max': 5000.0}, {'current': 4.936, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 4.809, 'min': 800.0, 'max': 5000.0}, {'current': 3.6, 'min': 800.0, 'max': 5000.0}, {'current': 4.867, 'min': 800.0, 'max': 5000.0}], 'disk': {'total': 3665.956069946289, 'used': 192.37618255615234}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 125.7369384765625}}
+2023-03-23 01:01:16,662 INFO    HandlerThread:416043 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-23 01:01:16,662 INFO    HandlerThread:416043 [system_monitor.py:probe():185] Publishing system info
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-23 01:01:16,662 DEBUG   HandlerThread:416043 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-23 01:01:17,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:17,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/conda-environment.yaml
+2023-03-23 01:01:17,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/requirements.txt
+2023-03-23 01:01:17,994 DEBUG   HandlerThread:416043 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-23 01:01:17,994 DEBUG   HandlerThread:416043 [system_info.py:_save_code():89] Saving code
+2023-03-23 01:01:17,994 DEBUG   HandlerThread:416043 [system_info.py:_save_code():110] Saving code done
+2023-03-23 01:01:17,995 INFO    HandlerThread:416043 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-23 01:01:17,996 DEBUG   SenderThread:416043 [sender.py:send():336] send: files
+2023-03-23 01:01:17,996 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-23 01:01:17,996 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file code/pccls_run.py with policy now
+2023-03-23 01:01:18,000 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-23 01:01:18,000 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: stop_status
+2023-03-23 01:01:18,077 DEBUG   SenderThread:416043 [sender.py:send():336] send: telemetry
+2023-03-23 01:01:18,077 DEBUG   SenderThread:416043 [sender.py:send():336] send: telemetry
+2023-03-23 01:01:18,077 DEBUG   SenderThread:416043 [sender.py:send():336] send: files
+2023-03-23 01:01:18,077 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file *.txt with policy live
+2023-03-23 01:01:18,373 INFO    wandb-upload_0:416043 [upload_job.py:push():138] Uploaded file /tmp/tmp_ye8gxvnwandb/wbqff6tf-wandb-metadata.json
+2023-03-23 01:01:18,463 INFO    wandb-upload_1:416043 [upload_job.py:push():138] Uploaded file /tmp/tmp_ye8gxvnwandb/zbd1ql3o-code/pccls_run.py
+2023-03-23 01:01:18,566 INFO    wandb-upload_2:416043 [upload_job.py:push():138] Uploaded file /tmp/tmp_ye8gxvnwandb/328ki371-requirements.txt
+2023-03-23 01:01:18,573 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/conda-environment.yaml
+2023-03-23 01:01:18,573 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-metadata.json
+2023-03-23 01:01:18,573 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:18,573 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/code/pccls_run.py
+2023-03-23 01:01:18,573 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/code
+2023-03-23 01:01:19,733 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:20,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:21,379 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:21,380 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:21,380 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:01:21,380 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:21,380 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:21,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:22,574 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:26,381 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:31,382 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:32,673 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:32,673 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:01:32,673 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:32,675 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:33,000 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:33,577 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:36,675 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:37,219 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:37,219 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:38,000 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:38,578 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:38,593 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:38,593 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:38,594 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:38,594 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:38,819 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:39,522 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:39,522 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:01:39,522 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:39,523 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:39,578 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:40,579 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:42,523 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:43,001 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:47,526 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:48,002 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:48,581 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/config.yaml
+2023-03-23 01:01:50,857 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:50,858 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:01:50,858 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:50,859 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:51,581 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:52,859 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:01:53,003 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:55,419 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:55,420 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:56,583 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:56,789 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:56,790 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:56,790 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:56,790 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:57,016 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:57,726 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:01:57,726 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:01:57,726 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:01:57,727 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:01:58,010 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:01:58,583 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:01:58,583 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:01:58,727 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:03,011 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:03,727 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:08,011 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:08,728 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:09,295 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:09,296 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:09,296 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:09,297 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:09,586 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:13,012 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:13,976 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:13,976 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:13,979 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:15,296 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:15,296 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:15,296 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:15,297 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:15,584 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:16,200 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:16,200 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:16,201 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:16,201 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:16,587 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:16,588 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:16,652 DEBUG   SystemMonitor:416043 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-23 01:02:16,653 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:02:18,036 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:18,588 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:19,653 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:23,037 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:24,654 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:27,541 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:27,542 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:27,542 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:27,543 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:27,590 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:28,038 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:30,543 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:32,111 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:32,111 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:33,039 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:33,492 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:33,493 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:33,493 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:33,493 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:33,719 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:34,415 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:34,416 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:34,416 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:34,416 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:34,592 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:34,592 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:36,416 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:36,593 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:38,048 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:41,417 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:43,049 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:45,894 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:45,895 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:45,895 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:45,896 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:46,595 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:46,653 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:02:46,653 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:48,050 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:50,534 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:50,534 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:51,888 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:51,888 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:51,889 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:51,889 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:51,889 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:52,111 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:52,596 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:52,744 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:02:52,745 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:02:52,745 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:02:52,745 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:02:53,052 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:02:53,597 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:02:54,597 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:02:57,746 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:02:58,053 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:02,747 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:03,053 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:04,176 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:04,176 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:04,176 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:04,177 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:04,599 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:08,054 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:08,178 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:08,804 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:08,804 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,145 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,145 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,145 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,145 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,373 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:10,601 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:11,070 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:11,071 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:11,071 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:11,071 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:11,601 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:12,602 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:13,065 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:14,072 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:16,653 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:03:18,066 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:19,654 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:22,705 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:22,705 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:22,705 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:22,706 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:23,066 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:23,604 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:24,706 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:27,344 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:27,345 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:28,067 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:28,606 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:28,676 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:28,676 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:28,676 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:28,676 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:28,963 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:29,650 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:29,650 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:29,651 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:29,651 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:30,606 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:30,606 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:30,651 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:33,068 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:35,652 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:38,068 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:40,652 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:41,095 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:41,095 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:41,095 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:41,096 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:41,609 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:43,069 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:45,718 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:45,718 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:45,722 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:46,610 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:46,654 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:03:47,062 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,062 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,062 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,062 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,287 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,989 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:47,990 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:47,990 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:47,990 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:03:48,070 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:48,611 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:03:48,611 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:03:50,991 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:53,070 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:55,991 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:03:58,071 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:03:59,681 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:03:59,682 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:03:59,682 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:03:59,682 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:00,613 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:01,683 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:03,071 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:04,392 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:04,392 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:05,760 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:05,760 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:05,760 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:05,760 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:05,987 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:06,615 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:06,689 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:06,689 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:06,690 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:06,690 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:06,690 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:07,615 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:08,072 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:08,615 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:11,691 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:13,073 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:16,654 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:04:17,655 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:18,050 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:18,050 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:18,050 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:18,051 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:18,073 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:18,618 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:22,638 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:22,638 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:23,074 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:23,642 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:24,029 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,029 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,029 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,029 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,253 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,619 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:24,957 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:24,957 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:24,957 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:24,957 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:25,619 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:26,620 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:28,080 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:28,958 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:33,081 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:33,959 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:36,321 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:36,322 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:36,322 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:36,323 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:36,622 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:38,081 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:39,323 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:40,901 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:40,902 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,255 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,255 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,255 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,255 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,542 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:42,623 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:43,082 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:43,208 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:43,209 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:43,209 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:43,209 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:43,624 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:44,624 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:45,210 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:46,655 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:04:48,083 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:50,655 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:53,084 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-23 01:04:54,567 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-23 01:04:54,568 DEBUG   SenderThread:416043 [sender.py:send():336] send: history
+2023-03-23 01:04:54,568 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: summary_record
+2023-03-23 01:04:54,568 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:54,626 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:56,569 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:57,148 DEBUG   SenderThread:416043 [sender.py:send():336] send: exit
+2023-03-23 01:04:57,148 INFO    SenderThread:416043 [sender.py:send_exit():559] handling exit code: 255
+2023-03-23 01:04:57,148 INFO    SenderThread:416043 [sender.py:send_exit():561] handling runtime: 220
+2023-03-23 01:04:57,149 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:57,149 INFO    SenderThread:416043 [sender.py:send_exit():567] send defer
+2023-03-23 01:04:57,150 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,150 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-23 01:04:57,150 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,150 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-23 01:04:57,150 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 1
+2023-03-23 01:04:57,150 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,150 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-23 01:04:57,150 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,150 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-23 01:04:57,150 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 2
+2023-03-23 01:04:57,150 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,150 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-23 01:04:57,150 INFO    HandlerThread:416043 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-23 01:04:57,151 DEBUG   SystemMonitor:416043 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-23 01:04:57,151 DEBUG   SystemMonitor:416043 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-23 01:04:57,152 INFO    HandlerThread:416043 [interfaces.py:finish():175] Joined cpu
+2023-03-23 01:04:57,152 INFO    HandlerThread:416043 [interfaces.py:finish():175] Joined disk
+2023-03-23 01:04:57,182 INFO    HandlerThread:416043 [interfaces.py:finish():175] Joined gpu
+2023-03-23 01:04:57,182 INFO    HandlerThread:416043 [interfaces.py:finish():175] Joined memory
+2023-03-23 01:04:57,182 INFO    HandlerThread:416043 [interfaces.py:finish():175] Joined network
+2023-03-23 01:04:57,182 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,182 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-23 01:04:57,182 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 3
+2023-03-23 01:04:57,183 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,183 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-23 01:04:57,183 DEBUG   SenderThread:416043 [sender.py:send():336] send: stats
+2023-03-23 01:04:57,183 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,183 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-23 01:04:57,183 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 4
+2023-03-23 01:04:57,183 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,183 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-23 01:04:57,183 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,183 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-23 01:04:57,184 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 5
+2023-03-23 01:04:57,184 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,184 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-23 01:04:57,184 DEBUG   SenderThread:416043 [sender.py:send():336] send: summary
+2023-03-23 01:04:57,184 INFO    SenderThread:416043 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-23 01:04:57,184 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,184 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-23 01:04:57,184 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 6
+2023-03-23 01:04:57,184 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,184 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-23 01:04:57,184 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,185 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-23 01:04:57,185 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 7
+2023-03-23 01:04:57,185 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: status_report
+2023-03-23 01:04:57,185 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:57,185 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-23 01:04:57,185 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:57,185 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-23 01:04:57,627 INFO    Thread-13 :416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:04:58,148 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-23 01:04:59,151 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 8
+2023-03-23 01:04:59,151 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: poll_exit
+2023-03-23 01:04:59,151 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:59,151 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-23 01:04:59,151 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:59,151 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-23 01:04:59,151 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 9
+2023-03-23 01:04:59,152 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:59,152 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-23 01:04:59,152 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:59,152 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-23 01:04:59,152 INFO    SenderThread:416043 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:finish():392] scan: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log output.log
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-metadata.json wandb-metadata.json
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/config.yaml config.yaml
+2023-03-23 01:04:59,628 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/requirements.txt requirements.txt
+2023-03-23 01:04:59,631 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/conda-environment.yaml conda-environment.yaml
+2023-03-23 01:04:59,631 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json wandb-summary.json
+2023-03-23 01:04:59,631 INFO    SenderThread:416043 [dir_watcher.py:finish():406] scan save: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/code/pccls_run.py code/pccls_run.py
+2023-03-23 01:04:59,631 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 10
+2023-03-23 01:04:59,631 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:04:59,631 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-23 01:04:59,634 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:04:59,634 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-23 01:04:59,634 INFO    SenderThread:416043 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-23 01:05:00,043 INFO    wandb-upload_1:416043 [upload_job.py:push():138] Uploaded file /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/wandb-summary.json
+2023-03-23 01:05:00,091 INFO    wandb-upload_0:416043 [upload_job.py:push():138] Uploaded file /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/output.log
+2023-03-23 01:05:00,097 INFO    wandb-upload_2:416043 [upload_job.py:push():138] Uploaded file /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/config.yaml
+2023-03-23 01:05:00,108 INFO    wandb-upload_3:416043 [upload_job.py:push():138] Uploaded file /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/files/conda-environment.yaml
+2023-03-23 01:05:00,308 INFO    Thread-12 (_thread_body):416043 [sender.py:transition_state():587] send defer: 11
+2023-03-23 01:05:00,308 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:05:00,308 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-23 01:05:00,308 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:05:00,308 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-23 01:05:00,308 INFO    SenderThread:416043 [file_pusher.py:join():167] waiting for file pusher
+2023-03-23 01:05:00,308 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 12
+2023-03-23 01:05:00,309 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:05:00,309 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-23 01:05:00,309 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:05:00,309 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-23 01:05:00,538 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 13
+2023-03-23 01:05:00,538 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:05:00,538 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-23 01:05:00,538 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:05:00,538 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-23 01:05:00,538 INFO    SenderThread:416043 [sender.py:transition_state():587] send defer: 14
+2023-03-23 01:05:00,539 DEBUG   SenderThread:416043 [sender.py:send():336] send: final
+2023-03-23 01:05:00,539 DEBUG   SenderThread:416043 [sender.py:send():336] send: footer
+2023-03-23 01:05:00,539 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: defer
+2023-03-23 01:05:00,539 INFO    HandlerThread:416043 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-23 01:05:00,539 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: defer
+2023-03-23 01:05:00,539 INFO    SenderThread:416043 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-23 01:05:00,539 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-23 01:05:00,539 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: server_info
+2023-03-23 01:05:00,540 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: poll_exit
+2023-03-23 01:05:00,540 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-23 01:05:00,540 DEBUG   SenderThread:416043 [sender.py:send_request():363] send_request: server_info
+2023-03-23 01:05:00,540 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-23 01:05:00,679 INFO    MainThread:416043 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-23 01:05:00,680 INFO    MainThread:416043 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-23 01:05:00,680 INFO    MainThread:416043 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-23 01:05:00,680 DEBUG   HandlerThread:416043 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-23 01:05:00,680 INFO    HandlerThread:416043 [handler.py:finish():841] shutting down handler
+2023-03-23 01:05:01,540 INFO    WriterThread:416043 [datastore.py:close():299] close: /home/sssak/EquivPerformer/wandb/run-20230323_010116-d1xrjcu9/run-d1xrjcu9.wandb
+2023-03-23 01:05:01,679 INFO    SenderThread:416043 [sender.py:finish():1493] shutting down sender
+2023-03-23 01:05:01,679 INFO    SenderThread:416043 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-23 01:05:01,679 INFO    SenderThread:416043 [file_pusher.py:join():167] waiting for file pusher

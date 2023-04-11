@@ -1,0 +1,15 @@
+test points sampled
+> /home/sssak/EquivPerformer/equivariant_attention/modules.py(887)__init__()
+-> self.dim = f_mid_out['0']
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 272, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 204, in main
+    model = models.__dict__.get(FLAGS.model)(FLAGS.num_layers, FLAGS.num_channels, num_degrees=FLAGS.num_degrees,
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 52, in __init__
+    self.Gblock = self._build_gcn(self.fibers, self.num_layers)
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 77, in _build_gcn
+    Gblock.append(GSE3Res(fin, fibers['mid'], edge_dim=self.edge_dim, div=self.div, n_heads=self.n_heads,
+  File "/home/sssak/EquivPerformer/equivariant_attention/modules.py", line 887, in __init__
+    self.dim = f_mid_out['0']
+KeyError: '0'

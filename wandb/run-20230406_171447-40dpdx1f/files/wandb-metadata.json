@@ -1,0 +1,128 @@
+{
+    "os": "Linux-5.19.0-38-generic-x86_64-with-glibc2.35",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-04-06T21:14:48.022775",
+    "startedAt": "2023-04-06T21:14:47.748944",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--lag_step",
+        "1"
+    ],
+    "state": "running",
+    "program": "/home/sssak/EquivPerformer/pccls_run.py",
+    "codePath": "EquivPerformer/pccls_run.py",
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "xf2219@columbia.edu",
+    "root": "/home/sssak",
+    "host": "sssak-MS-7B17",
+    "username": "sssak",
+    "executable": "/home/sssak/anaconda3/envs/cuda/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4.298875000000001,
+        "min": 800.0,
+        "max": 5000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4.813,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.881,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.945,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.748,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.813,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.937,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.832,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.71,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.903,
+            "min": 800.0,
+            "max": 5000.0
+        }
+    ],
+    "disk": {
+        "total": 3665.956069946289,
+        "used": 401.52289962768555
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.73668670654297
+    }
+}

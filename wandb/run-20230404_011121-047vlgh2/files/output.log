@@ -1,0 +1,246 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (1): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (2): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 1)])
+      (q): GConvSE3Partial(structure=[(16, 1)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(16, 0), (17, 1), (16, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (1): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (2): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (1): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (2): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (1): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (2): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (1): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+      (2): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=16, out_features=16, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=16, out_features=16, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GBN): ModuleDict(
+      (0): VNLinearAndLeakyReLU(
+        (linear): VNLinear(
+          (map_to_feat): Linear(in_features=64, out_features=64, bias=False)
+        )
+        (leaky_relu): VNLeakyReLU(
+          (map_to_dir): Linear(in_features=64, out_features=64, bias=False)
+        )
+      )
+    )
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=16, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(80, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(80, 0)], out=[(64, 0)])
+  )
+)
+Total Params: 35203473, trainable params: 35203473
+Begin training
+Scanobjectnn_4090_256_20_batch32_att_6_16
+[0|0] loss: 2.70863
+training one epoch costs:25.455731868743896s
+...[0|test] loss: 2.27692
+Acc is {'acc': 0.3420138888888889}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_6_16.pt
+Inference costs:2.816182851791382s
+[1|0] loss: 2.18598
+training one epoch costs:24.42582392692566s
+...[1|test] loss: 2.35828
+Acc is {'acc': 0.2829861111111111}
+Inference costs:2.5458872318267822s
+[2|0] loss: 2.32736
+training one epoch costs:24.478114128112793s
+...[2|test] loss: 2.28880
+Acc is {'acc': 0.3472222222222222}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_6_16.pt
+Inference costs:2.8165955543518066s
+[3|0] loss: 2.44080
+training one epoch costs:24.329147815704346s
+...[3|test] loss: 2.87149
+Acc is {'acc': 0.19618055555555555}
+Inference costs:2.5056331157684326s
+[4|0] loss: 2.81246
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 272, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 245, in main
+    _, acc_epoch = train_epoch(epoch, model, task_loss, train_loader, optimizer, scheduler, FLAGS)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 85, in train_epoch
+    loss.backward()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

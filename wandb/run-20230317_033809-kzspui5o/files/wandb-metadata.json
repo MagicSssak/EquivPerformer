@@ -1,0 +1,122 @@
+{
+    "os": "Linux-5.19.0-32-generic-x86_64-with-glibc2.35",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-03-17T07:38:09.471911",
+    "startedAt": "2023-03-17T07:38:09.093331",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--head=8",
+        "--num_channels=8"
+    ],
+    "state": "running",
+    "program": "/home/sssak/EquivPerformer/pccls_run.py",
+    "codePath": "pccls_run.py",
+    "host": "sssak-MS-7B17",
+    "username": "sssak",
+    "executable": "/home/sssak/anaconda3/envs/cuda/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3.659125000000001,
+        "min": 800.0,
+        "max": 5000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.806,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.847,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2.105,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.687,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.972,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1.615,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3.6,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.799,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4.915,
+            "min": 800.0,
+            "max": 5000.0
+        }
+    ],
+    "disk": {
+        "total": 3665.956069946289,
+        "used": 190.37763214111328
+    },
+    "gpu": "NVIDIA Graphics Device",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA Graphics Device",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.7369384765625
+    }
+}

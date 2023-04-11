@@ -1,0 +1,51 @@
+test points sampled
+0
+16
+1
+16
+2
+16
+0
+16
+1
+16
+2
+16
+0
+16
+1
+16
+2
+16
+0
+16
+1
+16
+2
+16
+0
+16
+1
+16
+2
+16
+0
+64
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 272, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 204, in main
+    model = models.__dict__.get(FLAGS.model)(FLAGS.num_layers, FLAGS.num_channels, num_degrees=FLAGS.num_degrees,
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 52, in __init__
+    self.Gblock = self._build_gcn(self.fibers, self.num_layers)
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 84, in _build_gcn
+    GSE3Res(fibers['mid'], fibers['out'], edge_dim=self.edge_dim, div=1, n_heads=self.n_heads,
+  File "/home/sssak/EquivPerformer/equivariant_attention/modules.py", line 915, in __init__
+    self.project = GAttentiveSelfInt(self.cat.f_out, f_out)
+  File "/home/sssak/EquivPerformer/equivariant_attention/modules.py", line 454, in __init__
+    self.transform[str(o)] = self._build_net(m_in, m_out)
+  File "/home/sssak/EquivPerformer/equivariant_attention/modules.py", line 469, in _build_net
+    nn.init.kaiming_uniform_(net[-1].weight)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/nn/init.py", line 412, in kaiming_uniform_
+    return tensor.uniform_(-bound, bound)
+KeyboardInterrupt

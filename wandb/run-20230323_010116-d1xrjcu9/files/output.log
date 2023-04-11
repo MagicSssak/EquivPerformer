@@ -1,0 +1,151 @@
+test points sampled
+15
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (k): GConvSE3Partial(structure=[(4, 1)])
+      (q): GConvSE3Partial(structure=[(4, 1)])
+      (attn): GMABSE3(n_heads=4, structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+    )
+    (cat): GCat(structure=[(4, 0), (5, 1), (4, 2), (4, 3)])
+    (project): G1x1SE3(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (k): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (q): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (attn): GMABSE3(n_heads=4, structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (k): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (q): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (attn): GMABSE3(n_heads=4, structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (k): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (q): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (attn): GMABSE3(n_heads=4, structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (k): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (q): GConvSE3Partial(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+      (attn): GMABSE3(n_heads=4, structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(4, 0), (4, 1), (4, 2), (4, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=4, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(68, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(68, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+Scanobjectnn_4090_300_20_batch64_att_6_4
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[0|0] loss: 2.69992
+training one epoch costs:17.493916511535645s
+...[0|test] loss: 2.09160
+Acc is {'acc': 0.2760416666666667}
+Inference costs:1.3711731433868408s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[1|0] loss: 2.16344
+training one epoch costs:16.609097480773926s
+...[1|test] loss: 2.01933
+Acc is {'acc': 0.2847222222222222}
+Inference costs:1.3659260272979736s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[2|0] loss: 2.05835
+training one epoch costs:16.96789526939392s
+...[2|test] loss: 1.98132
+Acc is {'acc': 0.3003472222222222}
+Inference costs:1.3171799182891846s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[3|0] loss: 1.96274
+training one epoch costs:16.534345388412476s
+...[3|test] loss: 2.02303
+Acc is {'acc': 0.3003472222222222}
+Inference costs:1.3782868385314941s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[4|0] loss: 2.00065
+training one epoch costs:16.822970628738403s
+...[4|test] loss: 1.98833
+Acc is {'acc': 0.2986111111111111}
+Inference costs:1.350602388381958s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[5|0] loss: 2.08307
+training one epoch costs:16.701046466827393s
+...[5|test] loss: 2.00828
+Acc is {'acc': 0.3333333333333333}
+Inference costs:1.3376922607421875s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[6|0] loss: 2.01843
+training one epoch costs:16.97913694381714s
+...[6|test] loss: 2.04604
+Acc is {'acc': 0.3159722222222222}
+Inference costs:1.3280422687530518s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[7|0] loss: 2.13008
+training one epoch costs:16.763800144195557s
+...[7|test] loss: 1.97078
+Acc is {'acc': 0.3177083333333333}
+Inference costs:1.340193271636963s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[8|0] loss: 1.94609
+training one epoch costs:17.11439609527588s
+...[8|test] loss: 2.01807
+Acc is {'acc': 0.2951388888888889}
+Inference costs:1.3636353015899658s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[9|0] loss: 2.20924
+training one epoch costs:16.658684730529785s
+...[9|test] loss: 1.98442
+Acc is {'acc': 0.3142361111111111}
+Inference costs:1.3873934745788574s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[10|0] loss: 2.12165
+training one epoch costs:16.65612816810608s
+...[10|test] loss: 2.01109
+Acc is {'acc': 0.3211805555555556}
+Inference costs:1.350426435470581s
+Saved: models/Scanobjectnn_4090_300_20_batch64_att_6_4.pt
+[11|0] loss: 1.87061
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 244, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 223, in main
+    train_loss = train_epoch(epoch, model, task_loss, train_loader, optimizer, scheduler, FLAGS)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 72, in train_epoch
+    loss.backward()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

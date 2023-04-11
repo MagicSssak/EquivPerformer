@@ -1,0 +1,3655 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 1)])
+      (q): GConvSE3Partial(structure=[(8, 1)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (9, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=8, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(72, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(72, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+512_20_batch16_att_6_8
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[0|0] loss: 2.70154
+[0|100] loss: 2.21397
+training one epoch costs:40.7708420753479s
+...[0|test] loss: 1.76269
+Acc is {'acc': 0.4184027777777778}
+Inference costs:4.847238540649414s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[1|0] loss: 1.69571
+[1|100] loss: 1.69335
+training one epoch costs:40.1811957359314s
+...[1|test] loss: 1.60042
+Acc is {'acc': 0.4791666666666667}
+Inference costs:4.817700386047363s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[2|0] loss: 1.59226
+[2|100] loss: 1.65703
+training one epoch costs:39.73885416984558s
+...[2|test] loss: 1.54013
+Acc is {'acc': 0.4774305555555556}
+Inference costs:4.88310432434082s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[3|0] loss: 1.29446
+[3|100] loss: 1.45941
+training one epoch costs:39.43551683425903s
+...[3|test] loss: 1.36987
+Acc is {'acc': 0.5295138888888888}
+Inference costs:4.87411093711853s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[4|0] loss: 1.01736
+[4|100] loss: 1.38682
+training one epoch costs:39.814136028289795s
+...[4|test] loss: 1.38204
+Acc is {'acc': 0.546875}
+Inference costs:4.912843942642212s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[5|0] loss: 1.32521
+[5|100] loss: 1.23947
+training one epoch costs:40.242985010147095s
+...[5|test] loss: 1.23923
+Acc is {'acc': 0.6006944444444444}
+Inference costs:4.842916965484619s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[6|0] loss: 1.19683
+[6|100] loss: 1.17331
+training one epoch costs:39.53551387786865s
+...[6|test] loss: 1.19587
+Acc is {'acc': 0.609375}
+Inference costs:4.906059741973877s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[7|0] loss: 1.09116
+[7|100] loss: 1.11376
+training one epoch costs:39.61418652534485s
+...[7|test] loss: 1.19669
+Acc is {'acc': 0.609375}
+Inference costs:4.925226449966431s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[8|0] loss: 0.93995
+[8|100] loss: 1.07284
+training one epoch costs:39.69555425643921s
+...[8|test] loss: 1.19403
+Acc is {'acc': 0.6267361111111112}
+Inference costs:4.842788219451904s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[9|0] loss: 1.18581
+[9|100] loss: 1.01876
+training one epoch costs:39.40926909446716s
+...[9|test] loss: 1.14747
+Acc is {'acc': 0.6371527777777778}
+Inference costs:4.881303071975708s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[10|0] loss: 0.71623
+[10|100] loss: 1.00360
+training one epoch costs:39.539140939712524s
+...[10|test] loss: 1.21228
+Acc is {'acc': 0.6319444444444444}
+Inference costs:4.793079853057861s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[11|0] loss: 0.89380
+[11|100] loss: 0.95924
+training one epoch costs:39.91227102279663s
+...[11|test] loss: 1.06391
+Acc is {'acc': 0.6527777777777778}
+Inference costs:4.920048713684082s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[12|0] loss: 1.13291
+[12|100] loss: 0.88165
+training one epoch costs:39.51298546791077s
+...[12|test] loss: 1.14930
+Acc is {'acc': 0.6631944444444444}
+Inference costs:4.910542249679565s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[13|0] loss: 0.51895
+[13|100] loss: 0.83510
+training one epoch costs:39.94188618659973s
+...[13|test] loss: 1.07546
+Acc is {'acc': 0.6736111111111112}
+Inference costs:4.8511786460876465s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[14|0] loss: 1.19778
+[14|100] loss: 0.83246
+training one epoch costs:39.74450063705444s
+...[14|test] loss: 1.08738
+Acc is {'acc': 0.6805555555555556}
+Inference costs:4.989513158798218s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[15|0] loss: 1.19297
+[15|100] loss: 0.77129
+training one epoch costs:39.609586238861084s
+...[15|test] loss: 1.11025
+Acc is {'acc': 0.6614583333333334}
+Inference costs:4.778082847595215s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[16|0] loss: 0.28941
+[16|100] loss: 0.73947
+training one epoch costs:39.521424531936646s
+...[16|test] loss: 1.13315
+Acc is {'acc': 0.6597222222222222}
+Inference costs:4.841418027877808s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[17|0] loss: 1.16182
+[17|100] loss: 0.75519
+training one epoch costs:39.693360328674316s
+...[17|test] loss: 1.21973
+Acc is {'acc': 0.6215277777777778}
+Inference costs:4.898538589477539s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[18|0] loss: 1.26618
+[18|100] loss: 0.75721
+training one epoch costs:39.45407056808472s
+...[18|test] loss: 1.11901
+Acc is {'acc': 0.6840277777777778}
+Inference costs:4.824420690536499s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[19|0] loss: 0.58858
+[19|100] loss: 0.69456
+training one epoch costs:39.634774923324585s
+...[19|test] loss: 1.12784
+Acc is {'acc': 0.6857638888888888}
+Inference costs:4.796544551849365s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[20|0] loss: 0.62974
+[20|100] loss: 0.65113
+training one epoch costs:39.66201424598694s
+...[20|test] loss: 1.08852
+Acc is {'acc': 0.6927083333333334}
+Inference costs:4.839766025543213s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[21|0] loss: 0.71388
+[21|100] loss: 0.58576
+training one epoch costs:39.61063623428345s
+...[21|test] loss: 1.09167
+Acc is {'acc': 0.6788194444444444}
+Inference costs:4.790040731430054s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[22|0] loss: 0.65249
+[22|100] loss: 0.54185
+training one epoch costs:39.529173374176025s
+...[22|test] loss: 1.17467
+Acc is {'acc': 0.6701388888888888}
+Inference costs:4.933503150939941s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[23|0] loss: 0.29940
+[23|100] loss: 0.56937
+training one epoch costs:39.61620497703552s
+...[23|test] loss: 1.14716
+Acc is {'acc': 0.7013888888888888}
+Inference costs:4.777601480484009s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[24|0] loss: 0.28059
+[24|100] loss: 0.48333
+training one epoch costs:39.557952642440796s
+...[24|test] loss: 1.14581
+Acc is {'acc': 0.6927083333333334}
+Inference costs:4.810689926147461s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[25|0] loss: 0.70830
+[25|100] loss: 0.51413
+training one epoch costs:39.71475148200989s
+...[25|test] loss: 1.20942
+Acc is {'acc': 0.6944444444444444}
+Inference costs:4.798940896987915s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[26|0] loss: 0.39429
+[26|100] loss: 0.53934
+training one epoch costs:39.597557067871094s
+...[26|test] loss: 1.11987
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.774954557418823s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[27|0] loss: 0.46977
+[27|100] loss: 0.48314
+training one epoch costs:39.611926317214966s
+...[27|test] loss: 1.24777
+Acc is {'acc': 0.6805555555555556}
+Inference costs:4.926684617996216s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[28|0] loss: 0.41469
+[28|100] loss: 0.44642
+training one epoch costs:40.00314021110535s
+...[28|test] loss: 1.21105
+Acc is {'acc': 0.6579861111111112}
+Inference costs:4.856981039047241s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[29|0] loss: 0.18005
+[29|100] loss: 0.48933
+training one epoch costs:39.745410442352295s
+...[29|test] loss: 1.28553
+Acc is {'acc': 0.6701388888888888}
+Inference costs:4.968796014785767s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[30|0] loss: 0.48503
+[30|100] loss: 0.50005
+training one epoch costs:39.595298767089844s
+...[30|test] loss: 1.17635
+Acc is {'acc': 0.6736111111111112}
+Inference costs:4.786141633987427s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[31|0] loss: 0.71153
+[31|100] loss: 0.48551
+training one epoch costs:39.67100477218628s
+...[31|test] loss: 1.24180
+Acc is {'acc': 0.6475694444444444}
+Inference costs:4.87036657333374s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[32|0] loss: 0.18443
+[32|100] loss: 0.43544
+training one epoch costs:39.638214349746704s
+...[32|test] loss: 1.26022
+Acc is {'acc': 0.6701388888888888}
+Inference costs:4.827019929885864s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[33|0] loss: 0.18787
+[33|100] loss: 0.38790
+training one epoch costs:39.46547079086304s
+...[33|test] loss: 1.21837
+Acc is {'acc': 0.6909722222222222}
+Inference costs:4.998577117919922s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[34|0] loss: 0.23938
+[34|100] loss: 0.35415
+training one epoch costs:39.5879807472229s
+...[34|test] loss: 1.13461
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.9165143966674805s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[35|0] loss: 0.25571
+[35|100] loss: 0.34690
+training one epoch costs:39.57946515083313s
+...[35|test] loss: 1.25639
+Acc is {'acc': 0.7048611111111112}
+Inference costs:4.79610276222229s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[36|0] loss: 0.44544
+[36|100] loss: 0.36803
+training one epoch costs:39.65065026283264s
+...[36|test] loss: 1.25814
+Acc is {'acc': 0.703125}
+Inference costs:4.933307647705078s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[37|0] loss: 0.23855
+[37|100] loss: 0.35103
+training one epoch costs:39.60466456413269s
+...[37|test] loss: 1.24054
+Acc is {'acc': 0.6875}
+Inference costs:4.885159730911255s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[38|0] loss: 0.47807
+[38|100] loss: 0.37277
+training one epoch costs:39.75773859024048s
+...[38|test] loss: 1.26696
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.933138847351074s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[39|0] loss: 0.24895
+[39|100] loss: 0.46489
+training one epoch costs:39.52693700790405s
+...[39|test] loss: 1.20204
+Acc is {'acc': 0.6875}
+Inference costs:4.843643665313721s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[40|0] loss: 0.18232
+[40|100] loss: 0.35328
+training one epoch costs:39.748926877975464s
+...[40|test] loss: 1.24493
+Acc is {'acc': 0.6822916666666666}
+Inference costs:4.784839868545532s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[41|0] loss: 0.31014
+[41|100] loss: 0.30515
+training one epoch costs:39.561355113983154s
+...[41|test] loss: 1.34975
+Acc is {'acc': 0.6944444444444444}
+Inference costs:4.788821697235107s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[42|0] loss: 0.13238
+[42|100] loss: 0.29998
+training one epoch costs:39.431293964385986s
+...[42|test] loss: 1.34598
+Acc is {'acc': 0.6805555555555556}
+Inference costs:4.8142921924591064s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[43|0] loss: 0.43743
+[43|100] loss: 0.29401
+training one epoch costs:39.444915771484375s
+...[43|test] loss: 1.36974
+Acc is {'acc': 0.6892361111111112}
+Inference costs:4.838359117507935s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[44|0] loss: 0.07641
+[44|100] loss: 0.25322
+training one epoch costs:39.811943769454956s
+...[44|test] loss: 1.33452
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.827560901641846s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[45|0] loss: 0.15491
+[45|100] loss: 0.18114
+training one epoch costs:39.49805450439453s
+...[45|test] loss: 1.35139
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.804713010787964s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[46|0] loss: 0.13471
+[46|100] loss: 0.19559
+training one epoch costs:39.8471565246582s
+...[46|test] loss: 1.47314
+Acc is {'acc': 0.6961805555555556}
+Inference costs:4.786100625991821s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[47|0] loss: 0.15645
+[47|100] loss: 0.20007
+training one epoch costs:39.66998219490051s
+...[47|test] loss: 1.57818
+Acc is {'acc': 0.6944444444444444}
+Inference costs:4.858374834060669s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[48|0] loss: 0.10882
+[48|100] loss: 0.22113
+training one epoch costs:39.57126069068909s
+...[48|test] loss: 1.39067
+Acc is {'acc': 0.6840277777777778}
+Inference costs:4.853970766067505s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[49|0] loss: 0.16976
+[49|100] loss: 0.21635
+training one epoch costs:39.55023145675659s
+...[49|test] loss: 1.58447
+Acc is {'acc': 0.6840277777777778}
+Inference costs:4.845586776733398s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[50|0] loss: 0.61654
+[50|100] loss: 0.27517
+training one epoch costs:39.64703059196472s
+...[50|test] loss: 1.47418
+Acc is {'acc': 0.6944444444444444}
+Inference costs:4.858815908432007s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[51|0] loss: 0.52395
+[51|100] loss: 0.26129
+training one epoch costs:39.63446044921875s
+...[51|test] loss: 1.46296
+Acc is {'acc': 0.6857638888888888}
+Inference costs:4.783372402191162s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[52|0] loss: 0.05173
+[52|100] loss: 0.23519
+training one epoch costs:39.57142972946167s
+...[52|test] loss: 1.40609
+Acc is {'acc': 0.6822916666666666}
+Inference costs:4.928711175918579s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[53|0] loss: 0.26256
+[53|100] loss: 0.25319
+training one epoch costs:39.62981557846069s
+...[53|test] loss: 1.59706
+Acc is {'acc': 0.6875}
+Inference costs:4.922622203826904s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[54|0] loss: 0.05426
+[54|100] loss: 0.22704
+training one epoch costs:39.76840400695801s
+...[54|test] loss: 1.61410
+Acc is {'acc': 0.6961805555555556}
+Inference costs:4.827248573303223s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[55|0] loss: 0.20381
+[55|100] loss: 0.24805
+training one epoch costs:39.5891752243042s
+...[55|test] loss: 1.37448
+Acc is {'acc': 0.6927083333333334}
+Inference costs:4.946223974227905s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[56|0] loss: 0.35975
+[56|100] loss: 0.25016
+training one epoch costs:40.17144536972046s
+...[56|test] loss: 1.50425
+Acc is {'acc': 0.703125}
+Inference costs:4.91139817237854s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[57|0] loss: 0.14797
+[57|100] loss: 0.22192
+training one epoch costs:39.59781885147095s
+...[57|test] loss: 1.52053
+Acc is {'acc': 0.6892361111111112}
+Inference costs:4.840784549713135s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[58|0] loss: 0.19299
+[58|100] loss: 0.21965
+training one epoch costs:39.83239197731018s
+...[58|test] loss: 1.45831
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.934947490692139s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[59|0] loss: 0.20494
+[59|100] loss: 0.20853
+training one epoch costs:39.86708617210388s
+...[59|test] loss: 1.64438
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.965506076812744s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[60|0] loss: 0.10830
+[60|100] loss: 0.21018
+training one epoch costs:39.45201253890991s
+...[60|test] loss: 1.50812
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.909390687942505s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[61|0] loss: 0.16620
+[61|100] loss: 0.17215
+training one epoch costs:39.535529136657715s
+...[61|test] loss: 1.51138
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.871398448944092s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[62|0] loss: 0.03816
+[62|100] loss: 0.16010
+training one epoch costs:39.555437088012695s
+...[62|test] loss: 1.49948
+Acc is {'acc': 0.6736111111111112}
+Inference costs:4.865945339202881s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[63|0] loss: 0.07694
+[63|100] loss: 0.15841
+training one epoch costs:39.82327198982239s
+...[63|test] loss: 1.68097
+Acc is {'acc': 0.6788194444444444}
+Inference costs:4.885873556137085s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[64|0] loss: 0.08476
+[64|100] loss: 0.18026
+training one epoch costs:39.53796696662903s
+...[64|test] loss: 1.77403
+Acc is {'acc': 0.6701388888888888}
+Inference costs:4.818277597427368s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[65|0] loss: 0.22241
+[65|100] loss: 0.17394
+training one epoch costs:39.87057113647461s
+...[65|test] loss: 1.65075
+Acc is {'acc': 0.6840277777777778}
+Inference costs:4.861865520477295s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[66|0] loss: 0.02238
+[66|100] loss: 0.17681
+training one epoch costs:39.41843509674072s
+...[66|test] loss: 1.46201
+Acc is {'acc': 0.6996527777777778}
+Inference costs:4.7999114990234375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[67|0] loss: 0.12368
+[67|100] loss: 0.18425
+training one epoch costs:39.44539451599121s
+...[67|test] loss: 1.58239
+Acc is {'acc': 0.703125}
+Inference costs:5.003332614898682s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[68|0] loss: 0.49901
+[68|100] loss: 0.20561
+training one epoch costs:39.47350072860718s
+...[68|test] loss: 1.54708
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.796992778778076s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[69|0] loss: 0.07663
+[69|100] loss: 0.26803
+training one epoch costs:39.548035621643066s
+...[69|test] loss: 1.45365
+Acc is {'acc': 0.703125}
+Inference costs:4.856356859207153s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[70|0] loss: 0.29461
+[70|100] loss: 0.21821
+training one epoch costs:39.535868644714355s
+...[70|test] loss: 1.61239
+Acc is {'acc': 0.7013888888888888}
+Inference costs:4.893897294998169s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[71|0] loss: 0.07596
+[71|100] loss: 0.16138
+training one epoch costs:39.84361696243286s
+...[71|test] loss: 1.66582
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.819864273071289s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[72|0] loss: 0.15201
+[72|100] loss: 0.15882
+training one epoch costs:39.75111985206604s
+...[72|test] loss: 1.67691
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.937527656555176s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[73|0] loss: 0.30469
+[73|100] loss: 0.14002
+training one epoch costs:39.48627471923828s
+...[73|test] loss: 1.60608
+Acc is {'acc': 0.6996527777777778}
+Inference costs:4.936966896057129s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[74|0] loss: 0.34294
+[74|100] loss: 0.16903
+training one epoch costs:39.52882409095764s
+...[74|test] loss: 1.49265
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.800963401794434s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[75|0] loss: 0.15392
+[75|100] loss: 0.14778
+training one epoch costs:39.5023295879364s
+...[75|test] loss: 1.65728
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.907141447067261s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[76|0] loss: 0.09328
+[76|100] loss: 0.14240
+training one epoch costs:39.51584029197693s
+...[76|test] loss: 1.49456
+Acc is {'acc': 0.7013888888888888}
+Inference costs:4.849364519119263s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[77|0] loss: 0.05151
+[77|100] loss: 0.13098
+training one epoch costs:39.506027936935425s
+...[77|test] loss: 1.79044
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.909309387207031s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[78|0] loss: 0.32046
+[78|100] loss: 0.10847
+training one epoch costs:39.573609352111816s
+...[78|test] loss: 1.73972
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.931126832962036s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[79|0] loss: 0.00971
+[79|100] loss: 0.09941
+training one epoch costs:39.68191981315613s
+...[79|test] loss: 1.79859
+Acc is {'acc': 0.703125}
+Inference costs:4.844844341278076s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[80|0] loss: 0.00403
+[80|100] loss: 0.08802
+training one epoch costs:39.5836865901947s
+...[80|test] loss: 1.69762
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.848264694213867s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[81|0] loss: 0.01138
+[81|100] loss: 0.06747
+training one epoch costs:39.594159841537476s
+...[81|test] loss: 1.72676
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.802985668182373s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[82|0] loss: 0.00763
+[82|100] loss: 0.05665
+training one epoch costs:40.09096574783325s
+...[82|test] loss: 1.82518
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.8346405029296875s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[83|0] loss: 0.02184
+[83|100] loss: 0.05981
+training one epoch costs:39.67094802856445s
+...[83|test] loss: 1.74355
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.8406102657318115s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[84|0] loss: 0.11248
+[84|100] loss: 0.04227
+training one epoch costs:39.66657257080078s
+...[84|test] loss: 1.83269
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.789911985397339s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[85|0] loss: 0.02090
+[85|100] loss: 0.05110
+training one epoch costs:39.81643581390381s
+...[85|test] loss: 1.79248
+Acc is {'acc': 0.71875}
+Inference costs:4.884370565414429s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[86|0] loss: 0.00939
+[86|100] loss: 0.05218
+training one epoch costs:39.42309594154358s
+...[86|test] loss: 1.81132
+Acc is {'acc': 0.71875}
+Inference costs:4.804196119308472s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[87|0] loss: 0.16183
+[87|100] loss: 0.03791
+training one epoch costs:39.51612877845764s
+...[87|test] loss: 1.84628
+Acc is {'acc': 0.6996527777777778}
+Inference costs:4.923626184463501s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[88|0] loss: 0.25617
+[88|100] loss: 0.04906
+training one epoch costs:39.54201316833496s
+...[88|test] loss: 1.86121
+Acc is {'acc': 0.71875}
+Inference costs:4.881857395172119s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[89|0] loss: 0.03641
+[89|100] loss: 0.04658
+training one epoch costs:39.676204442977905s
+...[89|test] loss: 1.88785
+Acc is {'acc': 0.6996527777777778}
+Inference costs:4.91789698600769s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[90|0] loss: 0.08472
+[90|100] loss: 0.03444
+training one epoch costs:39.95860743522644s
+...[90|test] loss: 1.87460
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.955974817276001s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[91|0] loss: 0.01196
+[91|100] loss: 0.03352
+training one epoch costs:40.15492272377014s
+...[91|test] loss: 1.91570
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.844899654388428s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[92|0] loss: 0.02988
+[92|100] loss: 0.03104
+training one epoch costs:39.44646406173706s
+...[92|test] loss: 1.97072
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.914631605148315s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[93|0] loss: 0.00117
+[93|100] loss: 0.03921
+training one epoch costs:39.59243702888489s
+...[93|test] loss: 2.05220
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.7916765213012695s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[94|0] loss: 0.20889
+[94|100] loss: 0.03503
+training one epoch costs:39.59551644325256s
+...[94|test] loss: 1.87104
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.891655445098877s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[95|0] loss: 0.03216
+[95|100] loss: 0.04656
+training one epoch costs:39.54013013839722s
+...[95|test] loss: 1.96225
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.885982275009155s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[96|0] loss: 0.00095
+[96|100] loss: 0.03330
+training one epoch costs:39.491774797439575s
+...[96|test] loss: 1.99345
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.843283653259277s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[97|0] loss: 0.07457
+[97|100] loss: 0.03846
+training one epoch costs:39.71262979507446s
+...[97|test] loss: 2.01157
+Acc is {'acc': 0.71875}
+Inference costs:4.796802043914795s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[98|0] loss: 0.00734
+[98|100] loss: 0.03616
+training one epoch costs:39.587143659591675s
+...[98|test] loss: 1.93818
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.858805894851685s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[99|0] loss: 0.00227
+[99|100] loss: 0.04076
+training one epoch costs:39.45077300071716s
+...[99|test] loss: 1.91448
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.792391538619995s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[100|0] loss: 0.00144
+[100|100] loss: 0.03374
+training one epoch costs:39.52117705345154s
+...[100|test] loss: 2.11267
+Acc is {'acc': 0.71875}
+Inference costs:4.91025447845459s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[101|0] loss: 0.02600
+[101|100] loss: 0.03547
+training one epoch costs:39.707499504089355s
+...[101|test] loss: 1.91033
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.786006927490234s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[102|0] loss: 0.00429
+[102|100] loss: 0.04619
+training one epoch costs:39.622992277145386s
+...[102|test] loss: 1.95140
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.879221439361572s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[103|0] loss: 0.06475
+[103|100] loss: 0.03552
+training one epoch costs:39.57233953475952s
+...[103|test] loss: 1.98668
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.892213821411133s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[104|0] loss: 0.16514
+[104|100] loss: 0.03526
+training one epoch costs:39.66997051239014s
+...[104|test] loss: 1.99224
+Acc is {'acc': 0.71875}
+Inference costs:4.923455238342285s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[105|0] loss: 0.02735
+[105|100] loss: 0.03833
+training one epoch costs:39.484734296798706s
+...[105|test] loss: 2.01622
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.994859457015991s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[106|0] loss: 0.02052
+[106|100] loss: 0.02935
+training one epoch costs:39.66004729270935s
+...[106|test] loss: 1.88713
+Acc is {'acc': 0.71875}
+Inference costs:4.809990644454956s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[107|0] loss: 0.17005
+[107|100] loss: 0.03402
+training one epoch costs:39.64102864265442s
+...[107|test] loss: 2.05357
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.882204294204712s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[108|0] loss: 0.02884
+[108|100] loss: 0.02997
+training one epoch costs:39.725969314575195s
+...[108|test] loss: 1.97738
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.849290132522583s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[109|0] loss: 0.01928
+[109|100] loss: 0.03914
+training one epoch costs:39.716421365737915s
+...[109|test] loss: 2.03490
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.780372858047485s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[110|0] loss: 0.04102
+[110|100] loss: 0.02414
+training one epoch costs:39.57701253890991s
+...[110|test] loss: 2.05105
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.8610265254974365s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[111|0] loss: 0.04009
+[111|100] loss: 0.02844
+training one epoch costs:39.54953622817993s
+...[111|test] loss: 2.09406
+Acc is {'acc': 0.71875}
+Inference costs:4.87205958366394s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[112|0] loss: 0.00684
+[112|100] loss: 0.03589
+training one epoch costs:39.7016179561615s
+...[112|test] loss: 2.12733
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.8030407428741455s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[113|0] loss: 0.00193
+[113|100] loss: 0.04168
+training one epoch costs:39.44724225997925s
+...[113|test] loss: 2.20631
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.801063299179077s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[114|0] loss: 0.00219
+[114|100] loss: 0.04874
+training one epoch costs:39.61578893661499s
+...[114|test] loss: 2.07449
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.9647297859191895s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[115|0] loss: 0.00259
+[115|100] loss: 0.04656
+training one epoch costs:39.64839172363281s
+...[115|test] loss: 2.13645
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.832738161087036s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[116|0] loss: 0.02775
+[116|100] loss: 0.03680
+training one epoch costs:39.674272775650024s
+...[116|test] loss: 1.90621
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.854291677474976s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[117|0] loss: 0.08541
+[117|100] loss: 0.04150
+training one epoch costs:39.97862005233765s
+...[117|test] loss: 1.89006
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.889991760253906s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[118|0] loss: 0.00957
+[118|100] loss: 0.03884
+training one epoch costs:39.98724150657654s
+...[118|test] loss: 2.08627
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.821294546127319s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[119|0] loss: 0.01643
+[119|100] loss: 0.04263
+training one epoch costs:39.683584451675415s
+...[119|test] loss: 2.08786
+Acc is {'acc': 0.734375}
+Inference costs:4.84519624710083s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[120|0] loss: 0.00769
+[120|100] loss: 0.06160
+training one epoch costs:39.74794244766235s
+...[120|test] loss: 2.08974
+Acc is {'acc': 0.71875}
+Inference costs:4.787280797958374s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[121|0] loss: 0.32084
+[121|100] loss: 0.04561
+training one epoch costs:39.96147036552429s
+...[121|test] loss: 1.82788
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.7639687061309814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[122|0] loss: 0.00569
+[122|100] loss: 0.03572
+training one epoch costs:39.52507781982422s
+...[122|test] loss: 1.96447
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.895235061645508s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[123|0] loss: 0.01619
+[123|100] loss: 0.03665
+training one epoch costs:39.645691871643066s
+...[123|test] loss: 2.05705
+Acc is {'acc': 0.734375}
+Inference costs:4.816773176193237s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[124|0] loss: 0.13244
+[124|100] loss: 0.03950
+training one epoch costs:39.499470949172974s
+...[124|test] loss: 1.84313
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.870374917984009s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[125|0] loss: 0.00056
+[125|100] loss: 0.03581
+training one epoch costs:39.581031799316406s
+...[125|test] loss: 1.90574
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.8862364292144775s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[126|0] loss: 0.00274
+[126|100] loss: 0.03051
+training one epoch costs:39.6283221244812s
+...[126|test] loss: 1.94406
+Acc is {'acc': 0.734375}
+Inference costs:4.863013029098511s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[127|0] loss: 0.05781
+[127|100] loss: 0.04217
+training one epoch costs:39.537739276885986s
+...[127|test] loss: 2.00037
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.920177936553955s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[128|0] loss: 0.02164
+[128|100] loss: 0.04030
+training one epoch costs:39.61140298843384s
+...[128|test] loss: 1.99625
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.790305852890015s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[129|0] loss: 0.02016
+[129|100] loss: 0.03155
+training one epoch costs:39.615708351135254s
+...[129|test] loss: 1.99285
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.851317882537842s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[130|0] loss: 0.01244
+[130|100] loss: 0.03181
+training one epoch costs:39.49690365791321s
+...[130|test] loss: 1.95156
+Acc is {'acc': 0.7517361111111112}
+Inference costs:4.823886156082153s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[131|0] loss: 0.00723
+[131|100] loss: 0.03340
+training one epoch costs:39.53923988342285s
+...[131|test] loss: 2.13345
+Acc is {'acc': 0.71875}
+Inference costs:4.791614770889282s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[132|0] loss: 0.00438
+[132|100] loss: 0.03689
+training one epoch costs:39.62015438079834s
+...[132|test] loss: 2.10885
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.967076539993286s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[133|0] loss: 0.01084
+[133|100] loss: 0.04159
+training one epoch costs:39.646403312683105s
+...[133|test] loss: 2.09803
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.816697835922241s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[134|0] loss: 0.00298
+[134|100] loss: 0.03327
+training one epoch costs:39.62344169616699s
+...[134|test] loss: 2.18672
+Acc is {'acc': 0.6979166666666666}
+Inference costs:4.814789533615112s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[135|0] loss: 0.07770
+[135|100] loss: 0.03235
+training one epoch costs:39.598673582077026s
+...[135|test] loss: 2.20588
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.845465183258057s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[136|0] loss: 0.05441
+[136|100] loss: 0.04356
+training one epoch costs:39.55427551269531s
+...[136|test] loss: 2.17120
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.89597749710083s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[137|0] loss: 0.11765
+[137|100] loss: 0.03841
+training one epoch costs:39.613436698913574s
+...[137|test] loss: 2.02603
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.842926979064941s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[138|0] loss: 0.00126
+[138|100] loss: 0.04525
+training one epoch costs:39.63103151321411s
+...[138|test] loss: 2.04402
+Acc is {'acc': 0.7048611111111112}
+Inference costs:4.826983213424683s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[139|0] loss: 0.01118
+[139|100] loss: 0.04995
+training one epoch costs:39.78449630737305s
+...[139|test] loss: 2.20931
+Acc is {'acc': 0.71875}
+Inference costs:4.911057233810425s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[140|0] loss: 0.00164
+[140|100] loss: 0.04193
+training one epoch costs:39.65477132797241s
+...[140|test] loss: 2.12418
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.786123037338257s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[141|0] loss: 0.00476
+[141|100] loss: 0.03634
+training one epoch costs:39.4321825504303s
+...[141|test] loss: 2.03982
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.899799585342407s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[142|0] loss: 0.00064
+[142|100] loss: 0.04142
+training one epoch costs:39.54601168632507s
+...[142|test] loss: 2.12799
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.891160726547241s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[143|0] loss: 0.01561
+[143|100] loss: 0.04366
+training one epoch costs:39.807653188705444s
+...[143|test] loss: 2.13141
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.964866399765015s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[144|0] loss: 0.01986
+[144|100] loss: 0.04017
+training one epoch costs:39.71253561973572s
+...[144|test] loss: 2.16205
+Acc is {'acc': 0.7083333333333334}
+Inference costs:4.799729108810425s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[145|0] loss: 0.00560
+[145|100] loss: 0.03272
+training one epoch costs:39.660953760147095s
+...[145|test] loss: 2.07431
+Acc is {'acc': 0.734375}
+Inference costs:4.887011528015137s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[146|0] loss: 0.00074
+[146|100] loss: 0.02888
+training one epoch costs:39.68834567070007s
+...[146|test] loss: 2.15917
+Acc is {'acc': 0.7083333333333334}
+Inference costs:4.794753074645996s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[147|0] loss: 0.00077
+[147|100] loss: 0.03099
+training one epoch costs:39.654863595962524s
+...[147|test] loss: 2.20157
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.7955498695373535s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[148|0] loss: 0.01487
+[148|100] loss: 0.02862
+training one epoch costs:39.57027721405029s
+...[148|test] loss: 2.21921
+Acc is {'acc': 0.734375}
+Inference costs:4.87924861907959s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[149|0] loss: 0.10620
+[149|100] loss: 0.03162
+training one epoch costs:39.41826868057251s
+...[149|test] loss: 2.25272
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.8095221519470215s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[150|0] loss: 0.00067
+[150|100] loss: 0.03232
+training one epoch costs:39.60659146308899s
+...[150|test] loss: 2.29599
+Acc is {'acc': 0.703125}
+Inference costs:4.937336683273315s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[151|0] loss: 0.00065
+[151|100] loss: 0.03288
+training one epoch costs:39.53740668296814s
+...[151|test] loss: 2.34032
+Acc is {'acc': 0.71875}
+Inference costs:4.782080888748169s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[152|0] loss: 0.22842
+[152|100] loss: 0.03248
+training one epoch costs:39.613306283950806s
+...[152|test] loss: 2.25981
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.889209747314453s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[153|0] loss: 0.00884
+[153|100] loss: 0.03924
+training one epoch costs:39.59817361831665s
+...[153|test] loss: 2.34464
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.886394262313843s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[154|0] loss: 0.00439
+[154|100] loss: 0.03280
+training one epoch costs:39.98547410964966s
+...[154|test] loss: 2.33380
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.848730087280273s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[155|0] loss: 0.00579
+[155|100] loss: 0.04157
+training one epoch costs:39.55720019340515s
+...[155|test] loss: 2.30647
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.839857339859009s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[156|0] loss: 0.00026
+[156|100] loss: 0.04357
+training one epoch costs:39.58189868927002s
+...[156|test] loss: 2.38331
+Acc is {'acc': 0.71875}
+Inference costs:4.842605113983154s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[157|0] loss: 0.03158
+[157|100] loss: 0.03728
+training one epoch costs:39.715330362319946s
+...[157|test] loss: 2.15261
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.867997646331787s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[158|0] loss: 0.00746
+[158|100] loss: 0.03984
+training one epoch costs:39.73265027999878s
+...[158|test] loss: 2.17447
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.777872562408447s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[159|0] loss: 0.04902
+[159|100] loss: 0.03664
+training one epoch costs:39.729886293411255s
+...[159|test] loss: 2.07346
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.827170133590698s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[160|0] loss: 0.01863
+[160|100] loss: 0.02291
+training one epoch costs:39.613088846206665s
+...[160|test] loss: 2.23177
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.778258323669434s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[161|0] loss: 0.00041
+[161|100] loss: 0.02949
+training one epoch costs:39.424105405807495s
+...[161|test] loss: 2.29684
+Acc is {'acc': 0.71875}
+Inference costs:4.81524658203125s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[162|0] loss: 0.06923
+[162|100] loss: 0.01847
+training one epoch costs:39.72725558280945s
+...[162|test] loss: 2.27404
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.88521933555603s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[163|0] loss: 0.01293
+[163|100] loss: 0.01809
+training one epoch costs:39.535457611083984s
+...[163|test] loss: 2.21890
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.80099081993103s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[164|0] loss: 0.00033
+[164|100] loss: 0.02255
+training one epoch costs:39.711631774902344s
+...[164|test] loss: 2.28878
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.939894676208496s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[165|0] loss: 0.07545
+[165|100] loss: 0.02385
+training one epoch costs:39.47361469268799s
+...[165|test] loss: 2.21596
+Acc is {'acc': 0.734375}
+Inference costs:4.8404669761657715s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[166|0] loss: 0.00440
+[166|100] loss: 0.01878
+training one epoch costs:39.6288743019104s
+...[166|test] loss: 2.30181
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.884076118469238s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[167|0] loss: 0.00088
+[167|100] loss: 0.02012
+training one epoch costs:39.86913347244263s
+...[167|test] loss: 2.32638
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.867373704910278s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[168|0] loss: 0.00860
+[168|100] loss: 0.02383
+training one epoch costs:39.595099449157715s
+...[168|test] loss: 2.30070
+Acc is {'acc': 0.7239583333333334}
+Inference costs:5.012239217758179s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[169|0] loss: 0.00037
+[169|100] loss: 0.02105
+training one epoch costs:39.74522352218628s
+...[169|test] loss: 2.34324
+Acc is {'acc': 0.7048611111111112}
+Inference costs:4.816357135772705s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[170|0] loss: 0.00189
+[170|100] loss: 0.01466
+training one epoch costs:39.44869375228882s
+...[170|test] loss: 2.19796
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.7821879386901855s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[171|0] loss: 0.01915
+[171|100] loss: 0.02277
+training one epoch costs:39.65479230880737s
+...[171|test] loss: 2.27434
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.924777507781982s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[172|0] loss: 0.00153
+[172|100] loss: 0.01565
+training one epoch costs:39.62751317024231s
+...[172|test] loss: 2.24464
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.917901515960693s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[173|0] loss: 0.09458
+[173|100] loss: 0.01760
+training one epoch costs:39.95676803588867s
+...[173|test] loss: 2.39665
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.7948338985443115s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[174|0] loss: 0.00143
+[174|100] loss: 0.01826
+training one epoch costs:39.862974882125854s
+...[174|test] loss: 2.27099
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.85922646522522s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[175|0] loss: 0.00114
+[175|100] loss: 0.01351
+training one epoch costs:39.53563141822815s
+...[175|test] loss: 2.12101
+Acc is {'acc': 0.71875}
+Inference costs:4.904002666473389s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[176|0] loss: 0.00029
+[176|100] loss: 0.01819
+training one epoch costs:39.59975457191467s
+...[176|test] loss: 2.27741
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.914892196655273s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[177|0] loss: 0.00083
+[177|100] loss: 0.01266
+training one epoch costs:39.573761224746704s
+...[177|test] loss: 2.40289
+Acc is {'acc': 0.734375}
+Inference costs:4.88652777671814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[178|0] loss: 0.00287
+[178|100] loss: 0.01468
+training one epoch costs:39.67884850502014s
+...[178|test] loss: 2.28504
+Acc is {'acc': 0.7430555555555556}
+Inference costs:4.984489917755127s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[179|0] loss: 0.00052
+[179|100] loss: 0.01621
+training one epoch costs:39.65533757209778s
+...[179|test] loss: 2.22115
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.8614182472229s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[180|0] loss: 0.00071
+[180|100] loss: 0.01337
+training one epoch costs:39.64410424232483s
+...[180|test] loss: 2.33925
+Acc is {'acc': 0.7517361111111112}
+Inference costs:4.835054636001587s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[181|0] loss: 0.00110
+[181|100] loss: 0.02297
+training one epoch costs:39.496156454086304s
+...[181|test] loss: 2.30228
+Acc is {'acc': 0.71875}
+Inference costs:4.774714231491089s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[182|0] loss: 0.00042
+[182|100] loss: 0.02365
+training one epoch costs:39.412208795547485s
+...[182|test] loss: 2.43508
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.834575891494751s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[183|0] loss: 0.01181
+[183|100] loss: 0.01940
+training one epoch costs:39.7409303188324s
+...[183|test] loss: 2.32450
+Acc is {'acc': 0.7534722222222222}
+Inference costs:4.970574378967285s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[184|0] loss: 0.00007
+[184|100] loss: 0.01489
+training one epoch costs:39.67654204368591s
+...[184|test] loss: 2.21292
+Acc is {'acc': 0.734375}
+Inference costs:4.869515895843506s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[185|0] loss: 0.00017
+[185|100] loss: 0.01633
+training one epoch costs:39.72185683250427s
+...[185|test] loss: 2.30888
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.79656720161438s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[186|0] loss: 0.00041
+[186|100] loss: 0.01669
+training one epoch costs:39.68802452087402s
+...[186|test] loss: 2.31058
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.809441328048706s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[187|0] loss: 0.00031
+[187|100] loss: 0.01361
+training one epoch costs:39.73132920265198s
+...[187|test] loss: 2.34727
+Acc is {'acc': 0.734375}
+Inference costs:4.856099605560303s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[188|0] loss: 0.00003
+[188|100] loss: 0.01667
+training one epoch costs:39.61406493186951s
+...[188|test] loss: 2.39200
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.972301721572876s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[189|0] loss: 0.00339
+[189|100] loss: 0.01300
+training one epoch costs:39.66628885269165s
+...[189|test] loss: 2.33092
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.944917440414429s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[190|0] loss: 0.00003
+[190|100] loss: 0.01884
+training one epoch costs:39.61191463470459s
+...[190|test] loss: 2.31230
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.80751633644104s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[191|0] loss: 0.00402
+[191|100] loss: 0.01255
+training one epoch costs:40.03564167022705s
+...[191|test] loss: 2.42866
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.8486645221710205s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[192|0] loss: 0.07915
+[192|100] loss: 0.01922
+training one epoch costs:39.52584171295166s
+...[192|test] loss: 2.48543
+Acc is {'acc': 0.734375}
+Inference costs:4.8873512744903564s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[193|0] loss: 0.01102
+[193|100] loss: 0.01784
+training one epoch costs:40.11555767059326s
+...[193|test] loss: 2.31635
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.885538816452026s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[194|0] loss: 0.00012
+[194|100] loss: 0.01846
+training one epoch costs:39.78844356536865s
+...[194|test] loss: 2.23753
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.89569354057312s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[195|0] loss: 0.14267
+[195|100] loss: 0.01758
+training one epoch costs:39.83808159828186s
+...[195|test] loss: 2.20758
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.881457328796387s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[196|0] loss: 0.00038
+[196|100] loss: 0.01826
+training one epoch costs:39.8209125995636s
+...[196|test] loss: 2.48845
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.941979169845581s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[197|0] loss: 0.01120
+[197|100] loss: 0.01570
+training one epoch costs:39.648473501205444s
+...[197|test] loss: 2.34669
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.8027403354644775s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[198|0] loss: 0.00648
+[198|100] loss: 0.01892
+training one epoch costs:39.65053701400757s
+...[198|test] loss: 2.40119
+Acc is {'acc': 0.71875}
+Inference costs:4.814999341964722s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[199|0] loss: 0.01872
+[199|100] loss: 0.01421
+training one epoch costs:39.881412982940674s
+...[199|test] loss: 2.40658
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.792291641235352s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[200|0] loss: 0.00094
+[200|100] loss: 0.01401
+training one epoch costs:39.635900020599365s
+...[200|test] loss: 2.33680
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.8505566120147705s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[201|0] loss: 0.00067
+[201|100] loss: 0.01479
+training one epoch costs:39.54613661766052s
+...[201|test] loss: 2.36018
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.87046480178833s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[202|0] loss: 0.00159
+[202|100] loss: 0.01382
+training one epoch costs:39.535181522369385s
+...[202|test] loss: 2.43896
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.897093772888184s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[203|0] loss: 0.00342
+[203|100] loss: 0.01376
+training one epoch costs:39.491719484329224s
+...[203|test] loss: 2.41156
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.891831874847412s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[204|0] loss: 0.00549
+[204|100] loss: 0.01410
+training one epoch costs:39.57093119621277s
+...[204|test] loss: 2.51049
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.853533029556274s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[205|0] loss: 0.15604
+[205|100] loss: 0.01278
+training one epoch costs:39.57370400428772s
+...[205|test] loss: 2.47711
+Acc is {'acc': 0.7517361111111112}
+Inference costs:4.879122972488403s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[206|0] loss: 0.00078
+[206|100] loss: 0.01581
+training one epoch costs:39.45884895324707s
+...[206|test] loss: 2.49787
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.888146638870239s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[207|0] loss: 0.00066
+[207|100] loss: 0.01940
+training one epoch costs:39.846434354782104s
+...[207|test] loss: 2.48183
+Acc is {'acc': 0.71875}
+Inference costs:4.800595998764038s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[208|0] loss: 0.00013
+[208|100] loss: 0.01221
+training one epoch costs:39.7468478679657s
+...[208|test] loss: 2.48735
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.808924436569214s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[209|0] loss: 0.02200
+[209|100] loss: 0.01315
+training one epoch costs:39.645567655563354s
+...[209|test] loss: 2.66795
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.95947003364563s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[210|0] loss: 0.00439
+[210|100] loss: 0.01481
+training one epoch costs:39.50653266906738s
+...[210|test] loss: 2.47397
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.882491827011108s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[211|0] loss: 0.01019
+[211|100] loss: 0.00894
+training one epoch costs:39.52526378631592s
+...[211|test] loss: 2.50551
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.828060150146484s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[212|0] loss: 0.00141
+[212|100] loss: 0.01222
+training one epoch costs:39.510703802108765s
+...[212|test] loss: 2.30844
+Acc is {'acc': 0.7430555555555556}
+Inference costs:4.8827314376831055s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[213|0] loss: 0.00003
+[213|100] loss: 0.01068
+training one epoch costs:39.692291259765625s
+...[213|test] loss: 2.40381
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.792497873306274s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[214|0] loss: 0.00103
+[214|100] loss: 0.00953
+training one epoch costs:39.55498385429382s
+...[214|test] loss: 2.41575
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.788305282592773s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[215|0] loss: 0.00325
+[215|100] loss: 0.01210
+training one epoch costs:39.65207314491272s
+...[215|test] loss: 2.59378
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.801090955734253s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[216|0] loss: 0.05347
+[216|100] loss: 0.00622
+training one epoch costs:39.764296531677246s
+...[216|test] loss: 2.44047
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.863203048706055s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[217|0] loss: 0.00582
+[217|100] loss: 0.01629
+training one epoch costs:39.61192798614502s
+...[217|test] loss: 2.30986
+Acc is {'acc': 0.7430555555555556}
+Inference costs:4.874243259429932s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[218|0] loss: 0.00561
+[218|100] loss: 0.01480
+training one epoch costs:39.46363711357117s
+...[218|test] loss: 2.31238
+Acc is {'acc': 0.7482638888888888}
+Inference costs:4.863070487976074s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[219|0] loss: 0.04338
+[219|100] loss: 0.02230
+training one epoch costs:39.563960790634155s
+...[219|test] loss: 2.49536
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.92424201965332s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[220|0] loss: 0.01874
+[220|100] loss: 0.01221
+training one epoch costs:39.69572067260742s
+...[220|test] loss: 2.40957
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.837663173675537s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[221|0] loss: 0.00510
+[221|100] loss: 0.01158
+training one epoch costs:39.571635723114014s
+...[221|test] loss: 2.43845
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.820232152938843s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[222|0] loss: 0.00414
+[222|100] loss: 0.01210
+training one epoch costs:39.664984703063965s
+...[222|test] loss: 2.39610
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.949727773666382s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[223|0] loss: 0.00102
+[223|100] loss: 0.01821
+training one epoch costs:39.79230284690857s
+...[223|test] loss: 2.39074
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.89323878288269s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[224|0] loss: 0.00013
+[224|100] loss: 0.01304
+training one epoch costs:39.5918333530426s
+...[224|test] loss: 2.53962
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.865007638931274s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[225|0] loss: 0.00045
+[225|100] loss: 0.01330
+training one epoch costs:39.58502721786499s
+...[225|test] loss: 2.54567
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.785441875457764s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[226|0] loss: 0.00028
+[226|100] loss: 0.01358
+training one epoch costs:39.6412398815155s
+...[226|test] loss: 2.51659
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.879795789718628s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[227|0] loss: 0.00328
+[227|100] loss: 0.01706
+training one epoch costs:39.44735360145569s
+...[227|test] loss: 2.58271
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.956291913986206s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[228|0] loss: 0.00257
+[228|100] loss: 0.01145
+training one epoch costs:39.659037828445435s
+...[228|test] loss: 2.56716
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.799794912338257s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[229|0] loss: 0.10789
+[229|100] loss: 0.01587
+training one epoch costs:39.868566036224365s
+...[229|test] loss: 2.44614
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.871923208236694s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[230|0] loss: 0.00111
+[230|100] loss: 0.00812
+training one epoch costs:39.448806285858154s
+...[230|test] loss: 2.57247
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.890838861465454s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[231|0] loss: 0.00034
+[231|100] loss: 0.01308
+training one epoch costs:39.860929012298584s
+...[231|test] loss: 2.61196
+Acc is {'acc': 0.734375}
+Inference costs:4.806054592132568s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[232|0] loss: 0.00031
+[232|100] loss: 0.01037
+training one epoch costs:39.71612310409546s
+...[232|test] loss: 2.36633
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.770277500152588s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[233|0] loss: 0.00080
+[233|100] loss: 0.01633
+training one epoch costs:39.649744272232056s
+...[233|test] loss: 2.52455
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.890721559524536s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[234|0] loss: 0.00529
+[234|100] loss: 0.01199
+training one epoch costs:39.434138774871826s
+...[234|test] loss: 2.52090
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.789140701293945s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[235|0] loss: 0.00288
+[235|100] loss: 0.00832
+training one epoch costs:39.639479637145996s
+...[235|test] loss: 2.60949
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.788082599639893s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[236|0] loss: 0.00003
+[236|100] loss: 0.01017
+training one epoch costs:39.95576858520508s
+...[236|test] loss: 2.63153
+Acc is {'acc': 0.71875}
+Inference costs:4.8247597217559814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[237|0] loss: 0.00058
+[237|100] loss: 0.01167
+training one epoch costs:39.489710330963135s
+...[237|test] loss: 2.64573
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.859668016433716s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[238|0] loss: 0.01526
+[238|100] loss: 0.01021
+training one epoch costs:39.680439710617065s
+...[238|test] loss: 2.56425
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.851348638534546s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[239|0] loss: 0.00005
+[239|100] loss: 0.01919
+training one epoch costs:39.63755655288696s
+...[239|test] loss: 2.69586
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.861782550811768s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[240|0] loss: 0.00645
+[240|100] loss: 0.01031
+training one epoch costs:39.61937856674194s
+...[240|test] loss: 2.44534
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.891451120376587s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[241|0] loss: 0.13153
+[241|100] loss: 0.01818
+training one epoch costs:39.495786905288696s
+...[241|test] loss: 2.44247
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.819360971450806s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[242|0] loss: 0.00929
+[242|100] loss: 0.01601
+training one epoch costs:40.13842177391052s
+...[242|test] loss: 2.53073
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.8537375926971436s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[243|0] loss: 0.00157
+[243|100] loss: 0.01790
+training one epoch costs:39.53564524650574s
+...[243|test] loss: 2.71671
+Acc is {'acc': 0.734375}
+Inference costs:4.791904926300049s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[244|0] loss: 0.00007
+[244|100] loss: 0.01725
+training one epoch costs:39.64683747291565s
+...[244|test] loss: 2.44630
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.798284292221069s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[245|0] loss: 0.00110
+[245|100] loss: 0.01207
+training one epoch costs:39.47401475906372s
+...[245|test] loss: 2.74912
+Acc is {'acc': 0.71875}
+Inference costs:4.905632257461548s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[246|0] loss: 0.01042
+[246|100] loss: 0.00897
+training one epoch costs:39.58213567733765s
+...[246|test] loss: 2.67520
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.873471736907959s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[247|0] loss: 0.00166
+[247|100] loss: 0.00802
+training one epoch costs:39.69351148605347s
+...[247|test] loss: 2.60331
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.914215326309204s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[248|0] loss: 0.01564
+[248|100] loss: 0.01519
+training one epoch costs:40.359631299972534s
+...[248|test] loss: 2.61009
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.85760760307312s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[249|0] loss: 0.01621
+[249|100] loss: 0.00906
+training one epoch costs:39.57629346847534s
+...[249|test] loss: 2.65784
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.888833284378052s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[250|0] loss: 0.06254
+[250|100] loss: 0.01411
+training one epoch costs:39.644115686416626s
+...[250|test] loss: 2.59244
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.869458198547363s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[251|0] loss: 0.00099
+[251|100] loss: 0.01419
+training one epoch costs:39.59090542793274s
+...[251|test] loss: 2.70505
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.827114582061768s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[252|0] loss: 0.00142
+[252|100] loss: 0.01414
+training one epoch costs:39.788776874542236s
+...[252|test] loss: 2.66642
+Acc is {'acc': 0.7048611111111112}
+Inference costs:4.797917366027832s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[253|0] loss: 0.03466
+[253|100] loss: 0.00994
+training one epoch costs:39.432220458984375s
+...[253|test] loss: 2.59353
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.850924253463745s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[254|0] loss: 0.00058
+[254|100] loss: 0.01010
+training one epoch costs:39.596500635147095s
+...[254|test] loss: 2.84647
+Acc is {'acc': 0.71875}
+Inference costs:4.80275559425354s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[255|0] loss: 0.00220
+[255|100] loss: 0.01109
+training one epoch costs:39.45742392539978s
+...[255|test] loss: 2.73874
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.808257579803467s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[256|0] loss: 0.00198
+[256|100] loss: 0.00665
+training one epoch costs:39.5397264957428s
+...[256|test] loss: 2.53911
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.786515235900879s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[257|0] loss: 0.00370
+[257|100] loss: 0.01202
+training one epoch costs:39.417550563812256s
+...[257|test] loss: 2.58745
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.770016193389893s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[258|0] loss: 0.00304
+[258|100] loss: 0.00932
+training one epoch costs:39.812034606933594s
+...[258|test] loss: 2.73938
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.861167907714844s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[259|0] loss: 0.00012
+[259|100] loss: 0.01148
+training one epoch costs:39.68511891365051s
+...[259|test] loss: 2.92769
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.912115097045898s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[260|0] loss: 0.00030
+[260|100] loss: 0.01033
+training one epoch costs:39.58260917663574s
+...[260|test] loss: 2.79726
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.895335912704468s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[261|0] loss: 0.00023
+[261|100] loss: 0.00857
+training one epoch costs:39.622068881988525s
+...[261|test] loss: 2.56200
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.94813871383667s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[262|0] loss: 0.00050
+[262|100] loss: 0.02080
+training one epoch costs:39.59644842147827s
+...[262|test] loss: 2.59580
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.866502523422241s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[263|0] loss: 0.00100
+[263|100] loss: 0.01322
+training one epoch costs:39.659390449523926s
+...[263|test] loss: 2.47473
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.868614435195923s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[264|0] loss: 0.11161
+[264|100] loss: 0.00802
+training one epoch costs:39.65102410316467s
+...[264|test] loss: 2.58165
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.9588518142700195s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[265|0] loss: 0.00024
+[265|100] loss: 0.01372
+training one epoch costs:39.71890687942505s
+...[265|test] loss: 2.54656
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.811581611633301s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[266|0] loss: 0.00008
+[266|100] loss: 0.01366
+training one epoch costs:39.45674228668213s
+...[266|test] loss: 2.58193
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.777925252914429s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[267|0] loss: 0.00048
+[267|100] loss: 0.01844
+training one epoch costs:39.46207046508789s
+...[267|test] loss: 2.51488
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.850487232208252s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[268|0] loss: 0.00006
+[268|100] loss: 0.00948
+training one epoch costs:39.45354962348938s
+...[268|test] loss: 2.60371
+Acc is {'acc': 0.7083333333333334}
+Inference costs:4.922752857208252s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[269|0] loss: 0.00359
+[269|100] loss: 0.01301
+training one epoch costs:39.495014905929565s
+...[269|test] loss: 2.62794
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.863290786743164s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[270|0] loss: 0.00011
+[270|100] loss: 0.02060
+training one epoch costs:39.4811532497406s
+...[270|test] loss: 2.67657
+Acc is {'acc': 0.7083333333333334}
+Inference costs:4.85593318939209s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[271|0] loss: 0.07292
+[271|100] loss: 0.02233
+training one epoch costs:39.72911286354065s
+...[271|test] loss: 2.47723
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.886949062347412s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[272|0] loss: 0.04387
+[272|100] loss: 0.01497
+training one epoch costs:39.74511098861694s
+...[272|test] loss: 2.61098
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.826817512512207s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[273|0] loss: 0.00210
+[273|100] loss: 0.01311
+training one epoch costs:39.54125952720642s
+...[273|test] loss: 2.65276
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.790032386779785s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[274|0] loss: 0.03781
+[274|100] loss: 0.01447
+training one epoch costs:39.53374695777893s
+...[274|test] loss: 2.60406
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.9132184982299805s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[275|0] loss: 0.00212
+[275|100] loss: 0.01209
+training one epoch costs:39.52449345588684s
+...[275|test] loss: 2.65716
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.7904441356658936s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[276|0] loss: 0.00178
+[276|100] loss: 0.01366
+training one epoch costs:39.49206471443176s
+...[276|test] loss: 2.67747
+Acc is {'acc': 0.734375}
+Inference costs:4.846165180206299s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[277|0] loss: 0.02340
+[277|100] loss: 0.01515
+training one epoch costs:39.8311493396759s
+...[277|test] loss: 2.75928
+Acc is {'acc': 0.71875}
+Inference costs:4.922347068786621s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[278|0] loss: 0.02812
+[278|100] loss: 0.01178
+training one epoch costs:39.445629596710205s
+...[278|test] loss: 2.59440
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.86302638053894s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[279|0] loss: 0.00396
+[279|100] loss: 0.01192
+training one epoch costs:39.86907887458801s
+...[279|test] loss: 2.58185
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.81407904624939s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[280|0] loss: 0.01506
+[280|100] loss: 0.01344
+training one epoch costs:39.67389798164368s
+...[280|test] loss: 2.68564
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.909968137741089s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[281|0] loss: 0.00041
+[281|100] loss: 0.01791
+training one epoch costs:39.5202534198761s
+...[281|test] loss: 2.69421
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.775249719619751s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[282|0] loss: 0.00067
+[282|100] loss: 0.01678
+training one epoch costs:39.56647729873657s
+...[282|test] loss: 2.66488
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.792604923248291s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[283|0] loss: 0.00011
+[283|100] loss: 0.00648
+training one epoch costs:39.590046882629395s
+...[283|test] loss: 2.59516
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.834927797317505s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[284|0] loss: 0.02210
+[284|100] loss: 0.01285
+training one epoch costs:39.63696551322937s
+...[284|test] loss: 2.48661
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.840015411376953s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[285|0] loss: 0.00037
+[285|100] loss: 0.01144
+training one epoch costs:39.86533451080322s
+...[285|test] loss: 2.55823
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.85406494140625s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[286|0] loss: 0.01282
+[286|100] loss: 0.01135
+training one epoch costs:39.527955770492554s
+...[286|test] loss: 2.56095
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.894169569015503s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[287|0] loss: 0.00481
+[287|100] loss: 0.01117
+training one epoch costs:39.65681576728821s
+...[287|test] loss: 2.55157
+Acc is {'acc': 0.7482638888888888}
+Inference costs:4.780458211898804s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[288|0] loss: 0.00166
+[288|100] loss: 0.00505
+training one epoch costs:39.72369432449341s
+...[288|test] loss: 2.70613
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.945263624191284s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[289|0] loss: 0.00703
+[289|100] loss: 0.01755
+training one epoch costs:39.79006361961365s
+...[289|test] loss: 2.55864
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.798255920410156s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[290|0] loss: 0.00068
+[290|100] loss: 0.01361
+training one epoch costs:39.54334998130798s
+...[290|test] loss: 2.53403
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.953837156295776s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[291|0] loss: 0.00137
+[291|100] loss: 0.00588
+training one epoch costs:39.66133451461792s
+...[291|test] loss: 2.56608
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.876801490783691s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[292|0] loss: 0.00585
+[292|100] loss: 0.00552
+training one epoch costs:39.49659299850464s
+...[292|test] loss: 2.47620
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.853786945343018s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[293|0] loss: 0.00422
+[293|100] loss: 0.00783
+training one epoch costs:39.633238315582275s
+...[293|test] loss: 2.61048
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.815326929092407s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[294|0] loss: 0.02704
+[294|100] loss: 0.00999
+training one epoch costs:40.0193452835083s
+...[294|test] loss: 2.49065
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.842038154602051s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[295|0] loss: 0.00013
+[295|100] loss: 0.00962
+training one epoch costs:39.76809477806091s
+...[295|test] loss: 2.49330
+Acc is {'acc': 0.7534722222222222}
+Inference costs:4.92255973815918s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[296|0] loss: 0.00282
+[296|100] loss: 0.00861
+training one epoch costs:39.556076765060425s
+...[296|test] loss: 2.58458
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.946803569793701s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[297|0] loss: 0.00425
+[297|100] loss: 0.00670
+training one epoch costs:39.64298725128174s
+...[297|test] loss: 2.65992
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.8500823974609375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[298|0] loss: 0.00012
+[298|100] loss: 0.00589
+training one epoch costs:39.682273387908936s
+...[298|test] loss: 2.59348
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.850910425186157s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[299|0] loss: 0.00378
+[299|100] loss: 0.00962
+training one epoch costs:39.50569534301758s
+...[299|test] loss: 2.52639
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.778775215148926s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[300|0] loss: 0.00838
+[300|100] loss: 0.01249
+training one epoch costs:39.78844618797302s
+...[300|test] loss: 2.50163
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.830874681472778s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[301|0] loss: 0.00040
+[301|100] loss: 0.00954
+training one epoch costs:39.744110107421875s
+...[301|test] loss: 2.47917
+Acc is {'acc': 0.7465277777777778}
+Inference costs:4.847252607345581s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[302|0] loss: 0.00141
+[302|100] loss: 0.01348
+training one epoch costs:39.442182540893555s
+...[302|test] loss: 2.64877
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.890142440795898s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[303|0] loss: 0.00008
+[303|100] loss: 0.00791
+training one epoch costs:39.47340488433838s
+...[303|test] loss: 2.78159
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.8845765590667725s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[304|0] loss: 0.00023
+[304|100] loss: 0.02113
+training one epoch costs:39.956294775009155s
+...[304|test] loss: 2.51451
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.784350872039795s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[305|0] loss: 0.00043
+[305|100] loss: 0.01347
+training one epoch costs:39.7138614654541s
+...[305|test] loss: 2.69789
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.851970434188843s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[306|0] loss: 0.03642
+[306|100] loss: 0.01345
+training one epoch costs:39.49373126029968s
+...[306|test] loss: 2.62125
+Acc is {'acc': 0.7552083333333334}
+Inference costs:4.7826948165893555s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[307|0] loss: 0.00100
+[307|100] loss: 0.01017
+training one epoch costs:39.51178431510925s
+...[307|test] loss: 2.58846
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.876960039138794s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[308|0] loss: 0.00851
+[308|100] loss: 0.00975
+training one epoch costs:39.45743918418884s
+...[308|test] loss: 2.58650
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.835064172744751s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[309|0] loss: 0.00039
+[309|100] loss: 0.00842
+training one epoch costs:39.546549558639526s
+...[309|test] loss: 2.82247
+Acc is {'acc': 0.71875}
+Inference costs:4.86323881149292s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[310|0] loss: 0.00614
+[310|100] loss: 0.01020
+training one epoch costs:39.4879150390625s
+...[310|test] loss: 2.66270
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.804860830307007s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[311|0] loss: 0.00019
+[311|100] loss: 0.01252
+training one epoch costs:39.78259253501892s
+...[311|test] loss: 2.74307
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.846168756484985s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[312|0] loss: 0.00166
+[312|100] loss: 0.01304
+training one epoch costs:39.805033922195435s
+...[312|test] loss: 2.63222
+Acc is {'acc': 0.7430555555555556}
+Inference costs:4.773895740509033s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[313|0] loss: 0.00000
+[313|100] loss: 0.01181
+training one epoch costs:39.67906427383423s
+...[313|test] loss: 2.77032
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.85558009147644s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[314|0] loss: 0.00136
+[314|100] loss: 0.01064
+training one epoch costs:39.808056592941284s
+...[314|test] loss: 2.55734
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.91043758392334s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[315|0] loss: 0.00053
+[315|100] loss: 0.01274
+training one epoch costs:39.63595461845398s
+...[315|test] loss: 2.70988
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.8198912143707275s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[316|0] loss: 0.02143
+[316|100] loss: 0.01378
+training one epoch costs:39.6355357170105s
+...[316|test] loss: 2.74944
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.928898096084595s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[317|0] loss: 0.00349
+[317|100] loss: 0.01514
+training one epoch costs:39.5261652469635s
+...[317|test] loss: 2.75286
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.8359901905059814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[318|0] loss: 0.00007
+[318|100] loss: 0.00704
+training one epoch costs:39.66712236404419s
+...[318|test] loss: 2.64844
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.842762231826782s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[319|0] loss: 0.00631
+[319|100] loss: 0.01651
+training one epoch costs:39.45020604133606s
+...[319|test] loss: 2.65909
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.856842517852783s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[320|0] loss: 0.00610
+[320|100] loss: 0.01642
+training one epoch costs:39.536338329315186s
+...[320|test] loss: 2.65496
+Acc is {'acc': 0.7204861111111112}
+Inference costs:5.008700132369995s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[321|0] loss: 0.00047
+[321|100] loss: 0.00896
+training one epoch costs:39.4149112701416s
+...[321|test] loss: 2.77593
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.780784845352173s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[322|0] loss: 0.02337
+[322|100] loss: 0.01146
+training one epoch costs:39.540566205978394s
+...[322|test] loss: 2.72517
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.843440294265747s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[323|0] loss: 0.10127
+[323|100] loss: 0.00661
+training one epoch costs:39.74854516983032s
+...[323|test] loss: 2.69878
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.95422101020813s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[324|0] loss: 0.00081
+[324|100] loss: 0.00718
+training one epoch costs:39.56125593185425s
+...[324|test] loss: 2.76670
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.84311056137085s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[325|0] loss: 0.00062
+[325|100] loss: 0.00784
+training one epoch costs:39.62816381454468s
+...[325|test] loss: 2.55923
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.802956581115723s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[326|0] loss: 0.00019
+[326|100] loss: 0.00737
+training one epoch costs:39.51812958717346s
+...[326|test] loss: 2.64529
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.778111934661865s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[327|0] loss: 0.00039
+[327|100] loss: 0.01544
+training one epoch costs:39.61405968666077s
+...[327|test] loss: 2.70490
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.800417900085449s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[328|0] loss: 0.00118
+[328|100] loss: 0.01812
+training one epoch costs:39.67540788650513s
+...[328|test] loss: 2.65055
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.865777492523193s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[329|0] loss: 0.00010
+[329|100] loss: 0.01794
+training one epoch costs:39.59378695487976s
+...[329|test] loss: 2.76273
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.9493324756622314s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[330|0] loss: 0.00345
+[330|100] loss: 0.00690
+training one epoch costs:39.48484802246094s
+...[330|test] loss: 2.61944
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.850160360336304s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[331|0] loss: 0.00280
+[331|100] loss: 0.00824
+training one epoch costs:39.594945430755615s
+...[331|test] loss: 2.82003
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.842637062072754s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[332|0] loss: 0.00362
+[332|100] loss: 0.00569
+training one epoch costs:39.75414299964905s
+...[332|test] loss: 2.89289
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.890001535415649s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[333|0] loss: 0.01519
+[333|100] loss: 0.00677
+training one epoch costs:39.67732787132263s
+...[333|test] loss: 2.66523
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.824742794036865s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[334|0] loss: 0.01234
+[334|100] loss: 0.00640
+training one epoch costs:39.60640835762024s
+...[334|test] loss: 2.68113
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.852828025817871s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[335|0] loss: 0.00012
+[335|100] loss: 0.00840
+training one epoch costs:39.60289001464844s
+...[335|test] loss: 2.89174
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.919008016586304s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[336|0] loss: 0.00352
+[336|100] loss: 0.00403
+training one epoch costs:39.51423120498657s
+...[336|test] loss: 2.71353
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.926002264022827s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[337|0] loss: 0.00003
+[337|100] loss: 0.00550
+training one epoch costs:39.51537346839905s
+...[337|test] loss: 2.66325
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.819891452789307s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[338|0] loss: 0.00035
+[338|100] loss: 0.00701
+training one epoch costs:39.598796129226685s
+...[338|test] loss: 2.72044
+Acc is {'acc': 0.7204861111111112}
+Inference costs:5.024240255355835s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[339|0] loss: 0.00048
+[339|100] loss: 0.00509
+training one epoch costs:39.7170524597168s
+...[339|test] loss: 2.65322
+Acc is {'acc': 0.7552083333333334}
+Inference costs:4.8055901527404785s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[340|0] loss: 0.00032
+[340|100] loss: 0.00760
+training one epoch costs:39.59779167175293s
+...[340|test] loss: 2.67889
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.94594407081604s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[341|0] loss: 0.00032
+[341|100] loss: 0.01180
+training one epoch costs:39.46844553947449s
+...[341|test] loss: 2.64583
+Acc is {'acc': 0.734375}
+Inference costs:4.875282287597656s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[342|0] loss: 0.00501
+[342|100] loss: 0.01046
+training one epoch costs:39.590914487838745s
+...[342|test] loss: 2.75232
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.802629709243774s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[343|0] loss: 0.00117
+[343|100] loss: 0.01236
+training one epoch costs:39.56790375709534s
+...[343|test] loss: 2.76334
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.784670829772949s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[344|0] loss: 0.00028
+[344|100] loss: 0.01206
+training one epoch costs:39.69859266281128s
+...[344|test] loss: 2.92984
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.892760515213013s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[345|0] loss: 0.05310
+[345|100] loss: 0.01150
+training one epoch costs:39.6040678024292s
+...[345|test] loss: 2.73845
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.9100611209869385s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[346|0] loss: 0.00021
+[346|100] loss: 0.00849
+training one epoch costs:39.64118528366089s
+...[346|test] loss: 2.81929
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.852453708648682s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[347|0] loss: 0.00226
+[347|100] loss: 0.01924
+training one epoch costs:39.82469129562378s
+...[347|test] loss: 2.86238
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.8473594188690186s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[348|0] loss: 0.00357
+[348|100] loss: 0.00642
+training one epoch costs:39.74243927001953s
+...[348|test] loss: 2.95022
+Acc is {'acc': 0.734375}
+Inference costs:4.810430526733398s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[349|0] loss: 0.00028
+[349|100] loss: 0.00781
+training one epoch costs:39.64664387702942s
+...[349|test] loss: 2.83128
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.862080335617065s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[350|0] loss: 0.00046
+[350|100] loss: 0.00727
+training one epoch costs:39.84016489982605s
+...[350|test] loss: 2.68070
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.853090524673462s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[351|0] loss: 0.00179
+[351|100] loss: 0.00989
+training one epoch costs:39.63983750343323s
+...[351|test] loss: 2.92755
+Acc is {'acc': 0.734375}
+Inference costs:4.7954792976379395s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[352|0] loss: 0.00032
+[352|100] loss: 0.01532
+training one epoch costs:39.50865340232849s
+...[352|test] loss: 2.60897
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.838660478591919s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[353|0] loss: 0.00317
+[353|100] loss: 0.00867
+training one epoch costs:39.63549304008484s
+...[353|test] loss: 2.85425
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.899012565612793s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[354|0] loss: 0.00006
+[354|100] loss: 0.01018
+training one epoch costs:39.399393796920776s
+...[354|test] loss: 2.82806
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.935231447219849s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[355|0] loss: 0.00029
+[355|100] loss: 0.01294
+training one epoch costs:39.5177047252655s
+...[355|test] loss: 2.60932
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.780340909957886s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[356|0] loss: 0.00002
+[356|100] loss: 0.00968
+training one epoch costs:39.72311186790466s
+...[356|test] loss: 3.00343
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.865848064422607s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[357|0] loss: 0.00007
+[357|100] loss: 0.00895
+training one epoch costs:39.50731420516968s
+...[357|test] loss: 2.93481
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.936310291290283s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[358|0] loss: 0.00026
+[358|100] loss: 0.00665
+training one epoch costs:39.83069324493408s
+...[358|test] loss: 2.92830
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.89950704574585s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[359|0] loss: 0.00051
+[359|100] loss: 0.01418
+training one epoch costs:39.872862577438354s
+...[359|test] loss: 2.94982
+Acc is {'acc': 0.734375}
+Inference costs:4.9172821044921875s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[360|0] loss: 0.00330
+[360|100] loss: 0.01581
+training one epoch costs:39.465381145477295s
+...[360|test] loss: 2.71877
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.787322998046875s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[361|0] loss: 0.00281
+[361|100] loss: 0.01773
+training one epoch costs:39.81358098983765s
+...[361|test] loss: 2.60871
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.894742727279663s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[362|0] loss: 0.00034
+[362|100] loss: 0.01259
+training one epoch costs:39.77044987678528s
+...[362|test] loss: 2.77781
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.908994436264038s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[363|0] loss: 0.00372
+[363|100] loss: 0.00954
+training one epoch costs:39.59959840774536s
+...[363|test] loss: 2.72174
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.844419002532959s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[364|0] loss: 0.00272
+[364|100] loss: 0.01183
+training one epoch costs:39.73835778236389s
+...[364|test] loss: 2.81044
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.789628267288208s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[365|0] loss: 0.01006
+[365|100] loss: 0.00995
+training one epoch costs:39.648916482925415s
+...[365|test] loss: 2.57322
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.946507215499878s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[366|0] loss: 0.00729
+[366|100] loss: 0.01308
+training one epoch costs:39.7705979347229s
+...[366|test] loss: 2.79371
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.866514682769775s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[367|0] loss: 0.00059
+[367|100] loss: 0.01104
+training one epoch costs:39.72499752044678s
+...[367|test] loss: 2.79391
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.880411386489868s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[368|0] loss: 0.00067
+[368|100] loss: 0.00435
+training one epoch costs:40.201833724975586s
+...[368|test] loss: 2.70537
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.85982346534729s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[369|0] loss: 0.02525
+[369|100] loss: 0.00609
+training one epoch costs:39.5785026550293s
+...[369|test] loss: 2.71415
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.785257339477539s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[370|0] loss: 0.01205
+[370|100] loss: 0.00500
+training one epoch costs:39.42971420288086s
+...[370|test] loss: 2.76714
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.95989727973938s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[371|0] loss: 0.00089
+[371|100] loss: 0.00421
+training one epoch costs:39.50524187088013s
+...[371|test] loss: 2.92772
+Acc is {'acc': 0.7013888888888888}
+Inference costs:4.787140846252441s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[372|0] loss: 0.00135
+[372|100] loss: 0.00419
+training one epoch costs:39.42956829071045s
+...[372|test] loss: 2.65966
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.9375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[373|0] loss: 0.00083
+[373|100] loss: 0.00678
+training one epoch costs:39.86693620681763s
+...[373|test] loss: 2.81108
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.868915796279907s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[374|0] loss: 0.00016
+[374|100] loss: 0.00730
+training one epoch costs:39.53795123100281s
+...[374|test] loss: 2.81360
+Acc is {'acc': 0.71875}
+Inference costs:4.916025400161743s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[375|0] loss: 0.00160
+[375|100] loss: 0.00930
+training one epoch costs:39.63970875740051s
+...[375|test] loss: 2.76009
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.809219837188721s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[376|0] loss: 0.00045
+[376|100] loss: 0.00735
+training one epoch costs:39.551016330718994s
+...[376|test] loss: 2.76372
+Acc is {'acc': 0.7118055555555556}
+Inference costs:4.933468580245972s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[377|0] loss: 0.00194
+[377|100] loss: 0.00816
+training one epoch costs:39.65989136695862s
+...[377|test] loss: 2.75662
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.879520416259766s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[378|0] loss: 0.00056
+[378|100] loss: 0.00710
+training one epoch costs:39.83136200904846s
+...[378|test] loss: 2.80282
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.760849714279175s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[379|0] loss: 0.00334
+[379|100] loss: 0.00814
+training one epoch costs:39.53713393211365s
+...[379|test] loss: 2.62108
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.872425079345703s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[380|0] loss: 0.00004
+[380|100] loss: 0.01571
+training one epoch costs:39.66584658622742s
+...[380|test] loss: 2.71324
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.86516261100769s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[381|0] loss: 0.00467
+[381|100] loss: 0.00279
+training one epoch costs:39.553646087646484s
+...[381|test] loss: 2.86590
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.894960403442383s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[382|0] loss: 0.15136
+[382|100] loss: 0.00605
+training one epoch costs:39.499775409698486s
+...[382|test] loss: 2.81167
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.860652685165405s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[383|0] loss: 0.00642
+[383|100] loss: 0.00497
+training one epoch costs:39.6331524848938s
+...[383|test] loss: 2.68281
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.853937864303589s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[384|0] loss: 0.00001
+[384|100] loss: 0.00452
+training one epoch costs:39.84364891052246s
+...[384|test] loss: 2.80873
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.850119352340698s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[385|0] loss: 0.00008
+[385|100] loss: 0.00723
+training one epoch costs:39.944403648376465s
+...[385|test] loss: 2.85118
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.778954267501831s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[386|0] loss: 0.06728
+[386|100] loss: 0.00592
+training one epoch costs:39.48094916343689s
+...[386|test] loss: 2.69277
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.840782165527344s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[387|0] loss: 0.00820
+[387|100] loss: 0.00817
+training one epoch costs:39.65201950073242s
+...[387|test] loss: 2.87584
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.912607431411743s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[388|0] loss: 0.01251
+[388|100] loss: 0.00797
+training one epoch costs:39.63411617279053s
+...[388|test] loss: 2.74686
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.863220930099487s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[389|0] loss: 0.00292
+[389|100] loss: 0.00618
+training one epoch costs:39.55976414680481s
+...[389|test] loss: 2.74705
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.8240578174591064s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[390|0] loss: 0.00276
+[390|100] loss: 0.00539
+training one epoch costs:39.53255653381348s
+...[390|test] loss: 2.85016
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.901379823684692s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[391|0] loss: 0.00116
+[391|100] loss: 0.00545
+training one epoch costs:39.85875844955444s
+...[391|test] loss: 2.58071
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.800605058670044s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[392|0] loss: 0.01220
+[392|100] loss: 0.00968
+training one epoch costs:39.55468535423279s
+...[392|test] loss: 2.57937
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.8258466720581055s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[393|0] loss: 0.00003
+[393|100] loss: 0.01689
+training one epoch costs:39.54171562194824s
+...[393|test] loss: 2.79181
+Acc is {'acc': 0.71875}
+Inference costs:4.925268650054932s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[394|0] loss: 0.00005
+[394|100] loss: 0.00777
+training one epoch costs:40.232399463653564s
+...[394|test] loss: 2.73473
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.8349854946136475s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[395|0] loss: 0.00036
+[395|100] loss: 0.00652
+training one epoch costs:39.94617986679077s
+...[395|test] loss: 2.83592
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.780485153198242s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[396|0] loss: 0.00046
+[396|100] loss: 0.00572
+training one epoch costs:39.5149929523468s
+...[396|test] loss: 2.90074
+Acc is {'acc': 0.71875}
+Inference costs:4.887589454650879s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[397|0] loss: 0.00056
+[397|100] loss: 0.01011
+training one epoch costs:39.753584146499634s
+...[397|test] loss: 2.81010
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.871509790420532s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[398|0] loss: 0.00021
+[398|100] loss: 0.00564
+training one epoch costs:39.434882164001465s
+...[398|test] loss: 2.88543
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.880615234375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[399|0] loss: 0.00005
+[399|100] loss: 0.00650
+training one epoch costs:39.552727460861206s
+...[399|test] loss: 2.82103
+Acc is {'acc': 0.71875}
+Inference costs:4.857723712921143s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[400|0] loss: 0.04579
+[400|100] loss: 0.00708
+training one epoch costs:39.76098656654358s
+...[400|test] loss: 2.87536
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.910247802734375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[401|0] loss: 0.00008
+[401|100] loss: 0.00514
+training one epoch costs:39.779648542404175s
+...[401|test] loss: 2.87878
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.7879626750946045s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[402|0] loss: 0.00001
+[402|100] loss: 0.00337
+training one epoch costs:39.52019667625427s
+...[402|test] loss: 2.84809
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.867765426635742s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[403|0] loss: 0.00015
+[403|100] loss: 0.00786
+training one epoch costs:39.74920630455017s
+...[403|test] loss: 2.92701
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.881546258926392s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[404|0] loss: 0.00056
+[404|100] loss: 0.00356
+training one epoch costs:39.63803172111511s
+...[404|test] loss: 2.88347
+Acc is {'acc': 0.7065972222222222}
+Inference costs:4.796592473983765s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[405|0] loss: 0.00003
+[405|100] loss: 0.00637
+training one epoch costs:39.710352420806885s
+...[405|test] loss: 2.83358
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.925344705581665s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[406|0] loss: 0.00155
+[406|100] loss: 0.00323
+training one epoch costs:39.571359634399414s
+...[406|test] loss: 2.87198
+Acc is {'acc': 0.7100694444444444}
+Inference costs:4.811230182647705s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[407|0] loss: 0.00005
+[407|100] loss: 0.00448
+training one epoch costs:40.150691747665405s
+...[407|test] loss: 2.64153
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.878947019577026s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[408|0] loss: 0.00003
+[408|100] loss: 0.00318
+training one epoch costs:39.49012613296509s
+...[408|test] loss: 2.65517
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.849336385726929s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[409|0] loss: 0.00003
+[409|100] loss: 0.00621
+training one epoch costs:39.76022505760193s
+...[409|test] loss: 2.72152
+Acc is {'acc': 0.734375}
+Inference costs:4.918876886367798s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[410|0] loss: 0.00019
+[410|100] loss: 0.00180
+training one epoch costs:39.646432638168335s
+...[410|test] loss: 2.82657
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.7924110889434814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[411|0] loss: 0.00005
+[411|100] loss: 0.00389
+training one epoch costs:39.59495449066162s
+...[411|test] loss: 2.76234
+Acc is {'acc': 0.734375}
+Inference costs:4.811206579208374s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[412|0] loss: 0.00003
+[412|100] loss: 0.00353
+training one epoch costs:39.5803747177124s
+...[412|test] loss: 2.75297
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.8935630321502686s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[413|0] loss: 0.00013
+[413|100] loss: 0.00328
+training one epoch costs:39.639572620391846s
+...[413|test] loss: 2.72496
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.78983211517334s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[414|0] loss: 0.00004
+[414|100] loss: 0.00239
+training one epoch costs:39.49411177635193s
+...[414|test] loss: 2.74016
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.868565320968628s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[415|0] loss: 0.00061
+[415|100] loss: 0.00216
+training one epoch costs:39.74420118331909s
+...[415|test] loss: 2.72750
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.927888870239258s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[416|0] loss: 0.00001
+[416|100] loss: 0.00174
+training one epoch costs:39.666011095047s
+...[416|test] loss: 2.82059
+Acc is {'acc': 0.734375}
+Inference costs:4.882508277893066s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[417|0] loss: 0.00055
+[417|100] loss: 0.00203
+training one epoch costs:39.95044159889221s
+...[417|test] loss: 2.69390
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.877800464630127s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[418|0] loss: 0.00009
+[418|100] loss: 0.00520
+training one epoch costs:39.606903076171875s
+...[418|test] loss: 2.82219
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.922060012817383s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[419|0] loss: 0.00007
+[419|100] loss: 0.00241
+training one epoch costs:39.70978140830994s
+...[419|test] loss: 2.89357
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.892772674560547s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[420|0] loss: 0.00032
+[420|100] loss: 0.00191
+training one epoch costs:39.5402307510376s
+...[420|test] loss: 2.77743
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.815004110336304s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[421|0] loss: 0.00108
+[421|100] loss: 0.00297
+training one epoch costs:39.77271294593811s
+...[421|test] loss: 2.82456
+Acc is {'acc': 0.7430555555555556}
+Inference costs:4.840649604797363s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[422|0] loss: 0.00001
+[422|100] loss: 0.00451
+training one epoch costs:39.531827449798584s
+...[422|test] loss: 2.74019
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.81675386428833s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[423|0] loss: 0.00019
+[423|100] loss: 0.00575
+training one epoch costs:39.49815082550049s
+...[423|test] loss: 2.71068
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.924916744232178s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[424|0] loss: 0.00152
+[424|100] loss: 0.00746
+training one epoch costs:39.57274770736694s
+...[424|test] loss: 2.59649
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.851937294006348s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[425|0] loss: 0.00027
+[425|100] loss: 0.00116
+training one epoch costs:39.489850759506226s
+...[425|test] loss: 2.69447
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.877736330032349s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[426|0] loss: 0.00070
+[426|100] loss: 0.00215
+training one epoch costs:39.88581919670105s
+...[426|test] loss: 2.72276
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.895630121231079s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[427|0] loss: 0.01001
+[427|100] loss: 0.00401
+training one epoch costs:40.14703059196472s
+...[427|test] loss: 2.78038
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.836950778961182s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[428|0] loss: 0.00001
+[428|100] loss: 0.00166
+training one epoch costs:39.70730900764465s
+...[428|test] loss: 2.71440
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.9367592334747314s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[429|0] loss: 0.00005
+[429|100] loss: 0.00136
+training one epoch costs:39.60213851928711s
+...[429|test] loss: 2.95325
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.8490753173828125s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[430|0] loss: 0.00006
+[430|100] loss: 0.00193
+training one epoch costs:39.490174531936646s
+...[430|test] loss: 2.74349
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.844162702560425s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[431|0] loss: 0.00064
+[431|100] loss: 0.00536
+training one epoch costs:39.50915861129761s
+...[431|test] loss: 2.57663
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.829296350479126s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[432|0] loss: 0.00064
+[432|100] loss: 0.00405
+training one epoch costs:39.4911675453186s
+...[432|test] loss: 2.71468
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.839829683303833s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[433|0] loss: 0.00376
+[433|100] loss: 0.00284
+training one epoch costs:39.72405743598938s
+...[433|test] loss: 2.94534
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.805767297744751s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[434|0] loss: 0.00288
+[434|100] loss: 0.00112
+training one epoch costs:39.690004110336304s
+...[434|test] loss: 2.91572
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.869558334350586s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[435|0] loss: 0.00013
+[435|100] loss: 0.00206
+training one epoch costs:39.70732617378235s
+...[435|test] loss: 2.85694
+Acc is {'acc': 0.734375}
+Inference costs:4.876219749450684s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[436|0] loss: 0.00335
+[436|100] loss: 0.00296
+training one epoch costs:39.58913564682007s
+...[436|test] loss: 2.68312
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.932590484619141s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[437|0] loss: 0.00039
+[437|100] loss: 0.00410
+training one epoch costs:39.65896677970886s
+...[437|test] loss: 2.81917
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.828799247741699s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[438|0] loss: 0.00003
+[438|100] loss: 0.00218
+training one epoch costs:39.95692491531372s
+...[438|test] loss: 2.87319
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.87380838394165s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[439|0] loss: 0.00195
+[439|100] loss: 0.00363
+training one epoch costs:39.73492097854614s
+...[439|test] loss: 2.76532
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.865537405014038s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[440|0] loss: 0.00012
+[440|100] loss: 0.00622
+training one epoch costs:39.8433403968811s
+...[440|test] loss: 2.78066
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.859963655471802s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[441|0] loss: 0.00017
+[441|100] loss: 0.00230
+training one epoch costs:39.592530965805054s
+...[441|test] loss: 2.83797
+Acc is {'acc': 0.7170138888888888}
+Inference costs:4.890780448913574s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[442|0] loss: 0.00173
+[442|100] loss: 0.00144
+training one epoch costs:39.747097969055176s
+...[442|test] loss: 2.91264
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.948914051055908s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[443|0] loss: 0.00001
+[443|100] loss: 0.00410
+training one epoch costs:39.754616498947144s
+...[443|test] loss: 2.82865
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.873192071914673s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[444|0] loss: 0.00011
+[444|100] loss: 0.00648
+training one epoch costs:39.707266330718994s
+...[444|test] loss: 2.99810
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.817549705505371s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[445|0] loss: 0.00003
+[445|100] loss: 0.00429
+training one epoch costs:39.4955415725708s
+...[445|test] loss: 2.76181
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.904130697250366s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[446|0] loss: 0.00014
+[446|100] loss: 0.00328
+training one epoch costs:39.59492325782776s
+...[446|test] loss: 2.68238
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.802717924118042s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[447|0] loss: 0.00000
+[447|100] loss: 0.00201
+training one epoch costs:39.52462387084961s
+...[447|test] loss: 2.76834
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.851131200790405s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[448|0] loss: 0.00001
+[448|100] loss: 0.00189
+training one epoch costs:39.56992506980896s
+...[448|test] loss: 2.79656
+Acc is {'acc': 0.734375}
+Inference costs:4.796299457550049s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[449|0] loss: 0.00118
+[449|100] loss: 0.00460
+training one epoch costs:39.83222460746765s
+...[449|test] loss: 2.78491
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.839952707290649s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[450|0] loss: 0.13225
+[450|100] loss: 0.00397
+training one epoch costs:39.658732652664185s
+...[450|test] loss: 2.80818
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.896308660507202s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[451|0] loss: 0.00956
+[451|100] loss: 0.00204
+training one epoch costs:39.68136763572693s
+...[451|test] loss: 3.00523
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.796280384063721s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[452|0] loss: 0.00056
+[452|100] loss: 0.00175
+training one epoch costs:39.581756591796875s
+...[452|test] loss: 2.88372
+Acc is {'acc': 0.734375}
+Inference costs:4.911203622817993s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[453|0] loss: 0.00134
+[453|100] loss: 0.00458
+training one epoch costs:40.046884298324585s
+...[453|test] loss: 2.84759
+Acc is {'acc': 0.71875}
+Inference costs:4.8437886238098145s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[454|0] loss: 0.00011
+[454|100] loss: 0.00159
+training one epoch costs:39.51250171661377s
+...[454|test] loss: 2.99900
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.822349309921265s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[455|0] loss: 0.00022
+[455|100] loss: 0.00344
+training one epoch costs:39.5556960105896s
+...[455|test] loss: 2.74357
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.82457160949707s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[456|0] loss: 0.00011
+[456|100] loss: 0.00187
+training one epoch costs:39.71898341178894s
+...[456|test] loss: 2.94582
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.881542444229126s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[457|0] loss: 0.00004
+[457|100] loss: 0.00110
+training one epoch costs:39.68575406074524s
+...[457|test] loss: 2.95235
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.881476879119873s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[458|0] loss: 0.00011
+[458|100] loss: 0.00091
+training one epoch costs:39.91955828666687s
+...[458|test] loss: 2.78234
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.925675868988037s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[459|0] loss: 0.00031
+[459|100] loss: 0.00495
+training one epoch costs:39.99778389930725s
+...[459|test] loss: 2.91750
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.833587646484375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[460|0] loss: 0.00001
+[460|100] loss: 0.00234
+training one epoch costs:39.506805181503296s
+...[460|test] loss: 2.85914
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.846087694168091s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[461|0] loss: 0.00037
+[461|100] loss: 0.00168
+training one epoch costs:39.610318660736084s
+...[461|test] loss: 2.85165
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.830019235610962s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[462|0] loss: 0.00011
+[462|100] loss: 0.00154
+training one epoch costs:39.56799817085266s
+...[462|test] loss: 2.63814
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.869685411453247s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[463|0] loss: 0.00002
+[463|100] loss: 0.00452
+training one epoch costs:39.661110401153564s
+...[463|test] loss: 2.71372
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.850696802139282s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[464|0] loss: 0.00465
+[464|100] loss: 0.00184
+training one epoch costs:39.737311124801636s
+...[464|test] loss: 2.79099
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.871423244476318s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[465|0] loss: 0.00005
+[465|100] loss: 0.00224
+training one epoch costs:39.53542923927307s
+...[465|test] loss: 2.72923
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.770631313323975s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[466|0] loss: 0.00002
+[466|100] loss: 0.00228
+training one epoch costs:39.70346260070801s
+...[466|test] loss: 2.81858
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.939550161361694s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[467|0] loss: 0.00122
+[467|100] loss: 0.00395
+training one epoch costs:39.461270332336426s
+...[467|test] loss: 2.92405
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.7867608070373535s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[468|0] loss: 0.00049
+[468|100] loss: 0.00334
+training one epoch costs:39.831377029418945s
+...[468|test] loss: 2.94717
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.82457423210144s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[469|0] loss: 0.00002
+[469|100] loss: 0.00289
+training one epoch costs:39.59747099876404s
+...[469|test] loss: 2.78983
+Acc is {'acc': 0.7222222222222222}
+Inference costs:5.014639854431152s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[470|0] loss: 0.00466
+[470|100] loss: 0.00101
+training one epoch costs:39.569416522979736s
+...[470|test] loss: 2.68653
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.855476140975952s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[471|0] loss: 0.00004
+[471|100] loss: 0.00383
+training one epoch costs:39.480101108551025s
+...[471|test] loss: 2.76274
+Acc is {'acc': 0.71875}
+Inference costs:4.958305835723877s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[472|0] loss: 0.00076
+[472|100] loss: 0.00450
+training one epoch costs:39.693554639816284s
+...[472|test] loss: 2.91820
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.8702073097229s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[473|0] loss: 0.00242
+[473|100] loss: 0.00120
+training one epoch costs:39.586832761764526s
+...[473|test] loss: 2.89403
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.93399977684021s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[474|0] loss: 0.00001
+[474|100] loss: 0.00244
+training one epoch costs:40.01992201805115s
+...[474|test] loss: 2.94927
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.8635218143463135s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[475|0] loss: 0.00051
+[475|100] loss: 0.00229
+training one epoch costs:39.51620864868164s
+...[475|test] loss: 2.96647
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.903390645980835s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[476|0] loss: 0.00056
+[476|100] loss: 0.00127
+training one epoch costs:39.54407072067261s
+...[476|test] loss: 3.02840
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.764906167984009s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[477|0] loss: 0.00017
+[477|100] loss: 0.00215
+training one epoch costs:39.66472339630127s
+...[477|test] loss: 2.80486
+Acc is {'acc': 0.7274305555555556}
+Inference costs:4.874022006988525s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[478|0] loss: 0.00200
+[478|100] loss: 0.00223
+training one epoch costs:39.96791934967041s
+...[478|test] loss: 2.76932
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.854329347610474s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[479|0] loss: 0.00002
+[479|100] loss: 0.00287
+training one epoch costs:39.51543712615967s
+...[479|test] loss: 2.81841
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.820642948150635s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[480|0] loss: 0.00055
+[480|100] loss: 0.00322
+training one epoch costs:39.78568649291992s
+...[480|test] loss: 2.97755
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.78158164024353s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[481|0] loss: 0.00002
+[481|100] loss: 0.00210
+training one epoch costs:39.8861448764801s
+...[481|test] loss: 2.84808
+Acc is {'acc': 0.734375}
+Inference costs:5.036163330078125s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[482|0] loss: 0.01005
+[482|100] loss: 0.00475
+training one epoch costs:39.807488203048706s
+...[482|test] loss: 2.92763
+Acc is {'acc': 0.71875}
+Inference costs:4.905229091644287s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[483|0] loss: 0.00029
+[483|100] loss: 0.00427
+training one epoch costs:39.59661102294922s
+...[483|test] loss: 2.98573
+Acc is {'acc': 0.7239583333333334}
+Inference costs:4.863449811935425s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[484|0] loss: 0.00002
+[484|100] loss: 0.00543
+training one epoch costs:39.7619309425354s
+...[484|test] loss: 2.92245
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.919466018676758s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[485|0] loss: 0.00047
+[485|100] loss: 0.00134
+training one epoch costs:39.45867419242859s
+...[485|test] loss: 3.03423
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.877307415008545s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[486|0] loss: 0.00131
+[486|100] loss: 0.00645
+training one epoch costs:39.527774810791016s
+...[486|test] loss: 2.92303
+Acc is {'acc': 0.7135416666666666}
+Inference costs:4.873760461807251s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[487|0] loss: 0.00026
+[487|100] loss: 0.00185
+training one epoch costs:39.74369788169861s
+...[487|test] loss: 2.84081
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.844821453094482s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[488|0] loss: 0.00009
+[488|100] loss: 0.00157
+training one epoch costs:39.81988477706909s
+...[488|test] loss: 2.77044
+Acc is {'acc': 0.7326388888888888}
+Inference costs:4.850750207901001s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[489|0] loss: 0.00037
+[489|100] loss: 0.00172
+training one epoch costs:39.55339550971985s
+...[489|test] loss: 2.87148
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.871077060699463s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[490|0] loss: 0.00023
+[490|100] loss: 0.00414
+training one epoch costs:39.61595177650452s
+...[490|test] loss: 2.77706
+Acc is {'acc': 0.7256944444444444}
+Inference costs:4.792643785476685s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[491|0] loss: 0.00002
+[491|100] loss: 0.00499
+training one epoch costs:39.514230251312256s
+...[491|test] loss: 2.85330
+Acc is {'acc': 0.7204861111111112}
+Inference costs:4.909397840499878s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[492|0] loss: 0.00009
+[492|100] loss: 0.00278
+training one epoch costs:39.94717192649841s
+...[492|test] loss: 2.71533
+Acc is {'acc': 0.7378472222222222}
+Inference costs:4.799891471862793s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[493|0] loss: 0.00002
+[493|100] loss: 0.00538
+training one epoch costs:39.451021671295166s
+...[493|test] loss: 2.94855
+Acc is {'acc': 0.734375}
+Inference costs:4.895604610443115s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[494|0] loss: 0.00004
+[494|100] loss: 0.00518
+training one epoch costs:39.68593502044678s
+...[494|test] loss: 2.54309
+Acc is {'acc': 0.75}
+Inference costs:4.7936742305755615s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[495|0] loss: 0.00059
+[495|100] loss: 0.00147
+training one epoch costs:39.80034422874451s
+...[495|test] loss: 2.81086
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.772438287734985s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[496|0] loss: 0.00015
+[496|100] loss: 0.00445
+training one epoch costs:39.69404411315918s
+...[496|test] loss: 2.82901
+Acc is {'acc': 0.734375}
+Inference costs:4.81826639175415s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[497|0] loss: 0.00000
+[497|100] loss: 0.00237
+training one epoch costs:39.47718358039856s
+...[497|test] loss: 2.66893
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.855018854141235s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[498|0] loss: 0.00002
+[498|100] loss: 0.00179
+training one epoch costs:39.607258558273315s
+...[498|test] loss: 2.78377
+Acc is {'acc': 0.7482638888888888}
+Inference costs:4.890945672988892s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[499|0] loss: 0.00004
+[499|100] loss: 0.00080
+training one epoch costs:39.5529248714447s
+...[499|test] loss: 2.79677
+Acc is {'acc': 0.7447916666666666}
+Inference costs:4.77988600730896s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[500|0] loss: 0.00002
+[500|100] loss: 0.00246
+training one epoch costs:39.525091886520386s
+...[500|test] loss: 2.83285
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.9292967319488525s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[501|0] loss: 0.00060
+[501|100] loss: 0.00459
+training one epoch costs:39.72956371307373s
+...[501|test] loss: 2.72645
+Acc is {'acc': 0.7222222222222222}
+Inference costs:4.847919225692749s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[502|0] loss: 0.00035
+[502|100] loss: 0.00340
+training one epoch costs:39.752376317977905s
+...[502|test] loss: 2.96360
+Acc is {'acc': 0.7291666666666666}
+Inference costs:4.7758095264434814s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[503|0] loss: 0.00002
+[503|100] loss: 0.00249
+training one epoch costs:39.64259219169617s
+...[503|test] loss: 2.87115
+Acc is {'acc': 0.7152777777777778}
+Inference costs:4.8119330406188965s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[504|0] loss: 0.00007
+[504|100] loss: 0.00170
+training one epoch costs:39.925252199172974s
+...[504|test] loss: 2.79189
+Acc is {'acc': 0.71875}
+Inference costs:4.822888135910034s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[505|0] loss: 0.00001
+[505|100] loss: 0.00090
+training one epoch costs:39.509652614593506s
+...[505|test] loss: 2.91831
+Acc is {'acc': 0.734375}
+Inference costs:4.827809810638428s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[506|0] loss: 0.00064
+[506|100] loss: 0.00244
+training one epoch costs:39.4913284778595s
+...[506|test] loss: 2.85884
+Acc is {'acc': 0.7361111111111112}
+Inference costs:4.796375036239624s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[507|0] loss: 0.00080
+[507|100] loss: 0.00127
+training one epoch costs:39.59528851509094s
+...[507|test] loss: 2.98069
+Acc is {'acc': 0.7395833333333334}
+Inference costs:4.9034271240234375s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[508|0] loss: 0.00282
+[508|100] loss: 0.00242
+training one epoch costs:39.634926319122314s
+...[508|test] loss: 2.81770
+Acc is {'acc': 0.7413194444444444}
+Inference costs:4.851747751235962s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[509|0] loss: 0.00004
+[509|100] loss: 0.00176
+training one epoch costs:39.55081582069397s
+...[509|test] loss: 2.88419
+Acc is {'acc': 0.7309027777777778}
+Inference costs:4.940338850021362s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[510|0] loss: 0.00012
+[510|100] loss: 0.00177
+training one epoch costs:39.56882190704346s
+...[510|test] loss: 2.86049
+Acc is {'acc': 0.734375}
+Inference costs:4.89552640914917s
+Saved: models/pc3d512_20_batch16_att_6_8.pt
+[511|0] loss: 0.00001
+[511|100] loss: 0.00716
+training one epoch costs:39.66352605819702s
+...[511|test] loss: 2.82371
+Acc is {'acc': 0.734375}
+Inference costs:4.906193256378174s
+Saved: models/pc3d512_20_batch16_att_6_8.pt

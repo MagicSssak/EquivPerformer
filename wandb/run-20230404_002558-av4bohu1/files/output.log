@@ -1,0 +1,19 @@
+test points sampled
+> /home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/nn/modules/module.py(447)add_module()
+-> raise TypeError("module name should be a string. Got {}".format(
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 272, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 204, in main
+    model = models.__dict__.get(FLAGS.model)(FLAGS.num_layers, FLAGS.num_channels, num_degrees=FLAGS.num_degrees,
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 52, in __init__
+    self.Gblock = self._build_gcn(self.fibers, self.num_layers)
+  File "/home/sssak/EquivPerformer/experiments/pc3d/pccls_models.py", line 77, in _build_gcn
+    Gblock.append(GSE3Res(fin, fibers['mid'], edge_dim=self.edge_dim, div=self.div, n_heads=self.n_heads,
+  File "/home/sssak/EquivPerformer/equivariant_attention/modules.py", line 889, in __init__
+    self.GBN[k] = VNLinearAndLeakyReLU(f_mid_out[k], f_mid_out[k])
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/nn/modules/container.py", line 419, in __setitem__
+    self.add_module(key, module)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 447, in add_module
+    raise TypeError("module name should be a string. Got {}".format(
+TypeError: module name should be a string. Got int

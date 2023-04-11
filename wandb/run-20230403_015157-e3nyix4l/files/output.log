@@ -1,0 +1,280 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 1)])
+      (q): GConvSE3Partial(structure=[(16, 1)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(16, 0), (17, 1), (16, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (k): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (q): GConvSE3Partial(structure=[(16, 0), (16, 1), (16, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(16, 0), (16, 1), (16, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (32, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(16, 0), (16, 1), (16, 2)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=16, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(80, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(80, 0)], out=[(64, 0)])
+  )
+)
+Total Params: 34153969, trainable params: 34153969
+Begin training
+Scanobjectnn_4090_256_20_batch32_att_4_16
+[0|0] loss: 2.70595
+training one epoch costs:16.19939374923706s
+...[0|test] loss: 2.17244
+Acc is {'acc': 0.3715277777777778}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8213098049163818s
+[1|0] loss: 2.30110
+training one epoch costs:15.268155097961426s
+...[1|test] loss: 2.10444
+Acc is {'acc': 0.4270833333333333}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8672490119934082s
+[2|0] loss: 2.41984
+training one epoch costs:15.275477647781372s
+...[2|test] loss: 1.97302
+Acc is {'acc': 0.5052083333333334}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8401618003845215s
+[3|0] loss: 1.94082
+training one epoch costs:15.313379526138306s
+...[3|test] loss: 1.87994
+Acc is {'acc': 0.5399305555555556}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8421430587768555s
+[4|0] loss: 1.72421
+training one epoch costs:15.297494649887085s
+...[4|test] loss: 1.82429
+Acc is {'acc': 0.6128472222222222}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.807837963104248s
+[5|0] loss: 1.88691
+training one epoch costs:15.255877494812012s
+...[5|test] loss: 1.79166
+Acc is {'acc': 0.6197916666666666}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.827805519104004s
+[6|0] loss: 1.65780
+training one epoch costs:15.259856462478638s
+...[6|test] loss: 1.79190
+Acc is {'acc': 0.609375}
+Inference costs:1.6093745231628418s
+[7|0] loss: 1.63026
+training one epoch costs:15.307114362716675s
+...[7|test] loss: 1.77413
+Acc is {'acc': 0.6302083333333334}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.9090838432312012s
+[8|0] loss: 1.78702
+training one epoch costs:15.313364744186401s
+...[8|test] loss: 1.76088
+Acc is {'acc': 0.6354166666666666}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8848986625671387s
+[9|0] loss: 1.76483
+training one epoch costs:15.25495958328247s
+...[9|test] loss: 1.75272
+Acc is {'acc': 0.6493055555555556}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8687019348144531s
+[10|0] loss: 1.65820
+training one epoch costs:15.20799446105957s
+...[10|test] loss: 1.72168
+Acc is {'acc': 0.6597222222222222}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8641793727874756s
+[11|0] loss: 1.65246
+training one epoch costs:15.35343050956726s
+...[11|test] loss: 1.74306
+Acc is {'acc': 0.6423611111111112}
+Inference costs:1.6052289009094238s
+[12|0] loss: 1.55248
+training one epoch costs:15.323745489120483s
+...[12|test] loss: 1.77381
+Acc is {'acc': 0.625}
+Inference costs:1.6317825317382812s
+[13|0] loss: 1.37542
+training one epoch costs:15.240270614624023s
+...[13|test] loss: 1.72173
+Acc is {'acc': 0.6666666666666666}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8636600971221924s
+[14|0] loss: 1.48027
+training one epoch costs:15.280447721481323s
+...[14|test] loss: 1.66651
+Acc is {'acc': 0.6909722222222222}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.9062116146087646s
+[15|0] loss: 1.61296
+training one epoch costs:15.308330774307251s
+...[15|test] loss: 1.69932
+Acc is {'acc': 0.703125}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.837238073348999s
+[16|0] loss: 1.51426
+training one epoch costs:15.23587679862976s
+...[16|test] loss: 1.70603
+Acc is {'acc': 0.6805555555555556}
+Inference costs:1.6399123668670654s
+[17|0] loss: 1.50517
+training one epoch costs:15.294497966766357s
+...[17|test] loss: 1.68524
+Acc is {'acc': 0.6805555555555556}
+Inference costs:1.5662803649902344s
+[18|0] loss: 1.46598
+training one epoch costs:15.199311017990112s
+...[18|test] loss: 1.69174
+Acc is {'acc': 0.6996527777777778}
+Inference costs:1.6251153945922852s
+[19|0] loss: 1.37476
+training one epoch costs:15.284618139266968s
+...[19|test] loss: 1.69778
+Acc is {'acc': 0.6701388888888888}
+Inference costs:1.607083797454834s
+[20|0] loss: 1.47103
+training one epoch costs:15.327845096588135s
+...[20|test] loss: 1.68729
+Acc is {'acc': 0.6701388888888888}
+Inference costs:1.6274728775024414s
+[21|0] loss: 1.45926
+training one epoch costs:15.307602882385254s
+...[21|test] loss: 1.71235
+Acc is {'acc': 0.6666666666666666}
+Inference costs:1.6002843379974365s
+[22|0] loss: 1.60680
+training one epoch costs:15.250734329223633s
+...[22|test] loss: 1.68246
+Acc is {'acc': 0.6909722222222222}
+Inference costs:1.629941701889038s
+[23|0] loss: 1.50585
+training one epoch costs:15.22858476638794s
+...[23|test] loss: 1.69159
+Acc is {'acc': 0.6909722222222222}
+Inference costs:1.658475399017334s
+[24|0] loss: 1.37469
+training one epoch costs:15.127978801727295s
+...[24|test] loss: 1.69613
+Acc is {'acc': 0.6875}
+Inference costs:1.6297168731689453s
+[25|0] loss: 1.26948
+training one epoch costs:15.32724666595459s
+...[25|test] loss: 1.71744
+Acc is {'acc': 0.6840277777777778}
+Inference costs:1.5928840637207031s
+[26|0] loss: 1.22894
+training one epoch costs:15.29721212387085s
+...[26|test] loss: 1.71664
+Acc is {'acc': 0.65625}
+Inference costs:1.6081225872039795s
+[27|0] loss: 1.32848
+training one epoch costs:15.451447248458862s
+...[27|test] loss: 1.67387
+Acc is {'acc': 0.6840277777777778}
+Inference costs:1.6019995212554932s
+[28|0] loss: 1.24292
+training one epoch costs:15.232871294021606s
+...[28|test] loss: 1.67744
+Acc is {'acc': 0.6944444444444444}
+Inference costs:1.616199016571045s
+[29|0] loss: 1.36225
+training one epoch costs:15.335305213928223s
+...[29|test] loss: 1.68760
+Acc is {'acc': 0.6961805555555556}
+Inference costs:1.616328239440918s
+[30|0] loss: 1.51935
+training one epoch costs:15.251543521881104s
+...[30|test] loss: 1.69997
+Acc is {'acc': 0.71875}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8550279140472412s
+[31|0] loss: 1.27810
+training one epoch costs:15.275789260864258s
+...[31|test] loss: 1.68497
+Acc is {'acc': 0.7013888888888888}
+Inference costs:1.6011910438537598s
+[32|0] loss: 1.38563
+training one epoch costs:15.26116943359375s
+...[32|test] loss: 1.68419
+Acc is {'acc': 0.6788194444444444}
+Inference costs:1.6311686038970947s
+[33|0] loss: 1.33517
+training one epoch costs:15.306392431259155s
+...[33|test] loss: 1.65277
+Acc is {'acc': 0.7256944444444444}
+Saved: models/Scanobjectnn_4090_256_20_batch32_att_4_16.pt
+Inference costs:1.8433706760406494s
+[34|0] loss: 1.42266
+training one epoch costs:15.266281843185425s
+...[34|test] loss: 1.67905
+Acc is {'acc': 0.7065972222222222}
+Inference costs:1.6026594638824463s
+[35|0] loss: 1.39288
+training one epoch costs:15.29356336593628s
+...[35|test] loss: 1.68920
+Acc is {'acc': 0.6927083333333334}
+Inference costs:1.5730934143066406s
+[36|0] loss: 1.36124
+training one epoch costs:15.311363458633423s
+...[36|test] loss: 1.65570
+Acc is {'acc': 0.6909722222222222}
+Inference costs:1.5936839580535889s
+[37|0] loss: 1.32687
+training one epoch costs:15.316098690032959s
+...[37|test] loss: 1.66833
+Acc is {'acc': 0.7013888888888888}
+Inference costs:1.574470043182373s
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 272, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 245, in main
+    _, acc_epoch = train_epoch(epoch, model, task_loss, train_loader, optimizer, scheduler, FLAGS)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 61, in train_epoch
+    for i, (g, y) in enumerate(dataloader):
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1316, in _next_data
+    idx, data = self._get_data()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1282, in _get_data
+    success, data = self._try_get_data()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1120, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

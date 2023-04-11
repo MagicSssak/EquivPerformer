@@ -1,0 +1,641 @@
+test points sampled
+15
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 1)])
+      (q): GConvSE3Partial(structure=[(8, 1)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (9, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=8, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(72, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(72, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+Scanobjectnn_4090_256_20_batch64_att_6_8
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[0|0] loss: 2.73662
+training one epoch costs:22.969815731048584s
+...[0|test] loss: 2.39127
+Acc is {'acc': 0.20833333333333334}
+Inference costs:2.2712056636810303s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[1|0] loss: 2.46249
+training one epoch costs:21.822107315063477s
+...[1|test] loss: 1.93454
+Acc is {'acc': 0.3680555555555556}
+Inference costs:2.3136372566223145s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[2|0] loss: 1.84762
+training one epoch costs:21.93968939781189s
+...[2|test] loss: 1.80246
+Acc is {'acc': 0.3697916666666667}
+Inference costs:2.288489580154419s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[3|0] loss: 1.83682
+training one epoch costs:22.017165660858154s
+...[3|test] loss: 1.60313
+Acc is {'acc': 0.4826388888888889}
+Inference costs:2.447758197784424s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[4|0] loss: 1.70328
+training one epoch costs:21.962461709976196s
+...[4|test] loss: 1.59301
+Acc is {'acc': 0.4513888888888889}
+Inference costs:2.297328472137451s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[5|0] loss: 1.59588
+training one epoch costs:21.79503631591797s
+...[5|test] loss: 1.63352
+Acc is {'acc': 0.4513888888888889}
+Inference costs:2.312835931777954s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[6|0] loss: 1.78554
+training one epoch costs:21.996289491653442s
+...[6|test] loss: 1.50161
+Acc is {'acc': 0.5034722222222222}
+Inference costs:2.314096689224243s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[7|0] loss: 1.65813
+training one epoch costs:22.024036407470703s
+...[7|test] loss: 1.45387
+Acc is {'acc': 0.5138888888888888}
+Inference costs:2.2656428813934326s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[8|0] loss: 1.40456
+training one epoch costs:21.829190254211426s
+...[8|test] loss: 1.42775
+Acc is {'acc': 0.5190972222222222}
+Inference costs:2.3160054683685303s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[9|0] loss: 1.52755
+training one epoch costs:21.81395649909973s
+...[9|test] loss: 1.38240
+Acc is {'acc': 0.5416666666666666}
+Inference costs:2.2778260707855225s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[10|0] loss: 1.39921
+training one epoch costs:21.839871406555176s
+...[10|test] loss: 1.36761
+Acc is {'acc': 0.5451388888888888}
+Inference costs:2.2940497398376465s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[11|0] loss: 1.34497
+training one epoch costs:21.78290033340454s
+...[11|test] loss: 1.36277
+Acc is {'acc': 0.5121527777777778}
+Inference costs:2.274505853652954s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[12|0] loss: 1.70227
+training one epoch costs:21.927402019500732s
+...[12|test] loss: 1.28641
+Acc is {'acc': 0.5538194444444444}
+Inference costs:2.276066303253174s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[13|0] loss: 1.39631
+training one epoch costs:21.897204637527466s
+...[13|test] loss: 1.35353
+Acc is {'acc': 0.5486111111111112}
+Inference costs:2.345902681350708s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[14|0] loss: 1.14330
+training one epoch costs:21.77677845954895s
+...[14|test] loss: 1.24409
+Acc is {'acc': 0.5694444444444444}
+Inference costs:2.412259101867676s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[15|0] loss: 1.19572
+training one epoch costs:22.014697790145874s
+...[15|test] loss: 1.25903
+Acc is {'acc': 0.5763888888888888}
+Inference costs:2.292975902557373s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[16|0] loss: 1.10069
+training one epoch costs:21.913496732711792s
+...[16|test] loss: 1.26221
+Acc is {'acc': 0.5763888888888888}
+Inference costs:2.2895684242248535s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[17|0] loss: 1.03255
+training one epoch costs:21.859276294708252s
+...[17|test] loss: 1.23505
+Acc is {'acc': 0.5954861111111112}
+Inference costs:2.3079471588134766s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[18|0] loss: 0.91809
+training one epoch costs:21.931809663772583s
+...[18|test] loss: 1.22622
+Acc is {'acc': 0.5868055555555556}
+Inference costs:2.3297500610351562s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[19|0] loss: 0.98772
+training one epoch costs:22.046764135360718s
+...[19|test] loss: 1.13067
+Acc is {'acc': 0.6388888888888888}
+Inference costs:2.309600830078125s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[20|0] loss: 0.69441
+training one epoch costs:21.878587007522583s
+...[20|test] loss: 1.24261
+Acc is {'acc': 0.6128472222222222}
+Inference costs:2.2839362621307373s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[21|0] loss: 1.13278
+training one epoch costs:21.92366361618042s
+...[21|test] loss: 1.14340
+Acc is {'acc': 0.6267361111111112}
+Inference costs:2.2831056118011475s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[22|0] loss: 1.01875
+training one epoch costs:21.93981432914734s
+...[22|test] loss: 1.15349
+Acc is {'acc': 0.6336805555555556}
+Inference costs:2.2679812908172607s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[23|0] loss: 0.73845
+training one epoch costs:21.91161584854126s
+...[23|test] loss: 1.12995
+Acc is {'acc': 0.6388888888888888}
+Inference costs:2.3182528018951416s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[24|0] loss: 0.98644
+training one epoch costs:21.912708520889282s
+...[24|test] loss: 1.06537
+Acc is {'acc': 0.6684027777777778}
+Inference costs:2.3074474334716797s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[25|0] loss: 0.80691
+training one epoch costs:21.872379064559937s
+...[25|test] loss: 1.11016
+Acc is {'acc': 0.6493055555555556}
+Inference costs:2.3107423782348633s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[26|0] loss: 0.79202
+training one epoch costs:21.79370427131653s
+...[26|test] loss: 1.14367
+Acc is {'acc': 0.6701388888888888}
+Inference costs:2.290540933609009s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[27|0] loss: 0.78613
+training one epoch costs:21.822394847869873s
+...[27|test] loss: 1.13642
+Acc is {'acc': 0.65625}
+Inference costs:2.292478084564209s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[28|0] loss: 0.65593
+training one epoch costs:21.939284801483154s
+...[28|test] loss: 1.15689
+Acc is {'acc': 0.6440972222222222}
+Inference costs:2.3030965328216553s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[29|0] loss: 0.78133
+training one epoch costs:21.880053520202637s
+...[29|test] loss: 1.12263
+Acc is {'acc': 0.6423611111111112}
+Inference costs:2.279247522354126s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[30|0] loss: 0.77615
+training one epoch costs:21.89559054374695s
+...[30|test] loss: 1.07263
+Acc is {'acc': 0.6458333333333334}
+Inference costs:2.303025007247925s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[31|0] loss: 0.79429
+training one epoch costs:21.87390160560608s
+...[31|test] loss: 1.14880
+Acc is {'acc': 0.6475694444444444}
+Inference costs:2.388972759246826s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[32|0] loss: 0.77127
+training one epoch costs:21.957833528518677s
+...[32|test] loss: 1.13515
+Acc is {'acc': 0.6527777777777778}
+Inference costs:2.288682460784912s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[33|0] loss: 0.52628
+training one epoch costs:21.82872748374939s
+...[33|test] loss: 1.11025
+Acc is {'acc': 0.6666666666666666}
+Inference costs:2.281421422958374s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[34|0] loss: 0.52833
+training one epoch costs:21.99305248260498s
+...[34|test] loss: 1.10351
+Acc is {'acc': 0.6684027777777778}
+Inference costs:2.291490316390991s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[35|0] loss: 0.61142
+training one epoch costs:21.82544779777527s
+...[35|test] loss: 1.14852
+Acc is {'acc': 0.6458333333333334}
+Inference costs:2.3065693378448486s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[36|0] loss: 0.58539
+training one epoch costs:21.967566967010498s
+...[36|test] loss: 1.11509
+Acc is {'acc': 0.65625}
+Inference costs:2.293724536895752s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[37|0] loss: 0.60090
+training one epoch costs:21.9713397026062s
+...[37|test] loss: 1.13547
+Acc is {'acc': 0.6753472222222222}
+Inference costs:2.3298499584198s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[38|0] loss: 0.59706
+training one epoch costs:21.760089874267578s
+...[38|test] loss: 1.14087
+Acc is {'acc': 0.6788194444444444}
+Inference costs:2.3170101642608643s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[39|0] loss: 0.53130
+training one epoch costs:21.8765869140625s
+...[39|test] loss: 1.22732
+Acc is {'acc': 0.6649305555555556}
+Inference costs:2.2928247451782227s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[40|0] loss: 0.46308
+training one epoch costs:21.969077825546265s
+...[40|test] loss: 1.12353
+Acc is {'acc': 0.6875}
+Inference costs:2.3071556091308594s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[41|0] loss: 0.49985
+training one epoch costs:21.80883264541626s
+...[41|test] loss: 1.13037
+Acc is {'acc': 0.6875}
+Inference costs:2.3035800457000732s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[42|0] loss: 0.54688
+training one epoch costs:21.902838468551636s
+...[42|test] loss: 1.07227
+Acc is {'acc': 0.6961805555555556}
+Inference costs:2.318244218826294s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[43|0] loss: 0.64939
+training one epoch costs:21.881747722625732s
+...[43|test] loss: 1.16688
+Acc is {'acc': 0.6701388888888888}
+Inference costs:2.2837467193603516s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[44|0] loss: 0.65414
+training one epoch costs:21.976054191589355s
+...[44|test] loss: 1.16163
+Acc is {'acc': 0.703125}
+Inference costs:2.3666458129882812s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[45|0] loss: 0.40987
+training one epoch costs:21.903185844421387s
+...[45|test] loss: 1.18317
+Acc is {'acc': 0.7013888888888888}
+Inference costs:2.2819955348968506s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[46|0] loss: 0.33709
+training one epoch costs:21.954214096069336s
+...[46|test] loss: 1.16143
+Acc is {'acc': 0.6892361111111112}
+Inference costs:2.3008158206939697s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[47|0] loss: 0.53793
+training one epoch costs:21.963401079177856s
+...[47|test] loss: 1.17300
+Acc is {'acc': 0.6996527777777778}
+Inference costs:2.2969677448272705s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[48|0] loss: 0.29937
+training one epoch costs:21.988490104675293s
+...[48|test] loss: 1.26683
+Acc is {'acc': 0.6753472222222222}
+Inference costs:2.312289237976074s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[49|0] loss: 0.30527
+training one epoch costs:21.963770151138306s
+...[49|test] loss: 1.20955
+Acc is {'acc': 0.6979166666666666}
+Inference costs:2.3022310733795166s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[50|0] loss: 0.54853
+training one epoch costs:21.940032243728638s
+...[50|test] loss: 1.19544
+Acc is {'acc': 0.6875}
+Inference costs:2.2710585594177246s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[51|0] loss: 0.27810
+training one epoch costs:22.17821979522705s
+...[51|test] loss: 1.17789
+Acc is {'acc': 0.6805555555555556}
+Inference costs:2.318127155303955s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[52|0] loss: 0.26422
+training one epoch costs:21.903184413909912s
+...[52|test] loss: 1.22060
+Acc is {'acc': 0.6875}
+Inference costs:2.306365728378296s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[53|0] loss: 0.27061
+training one epoch costs:21.8747398853302s
+...[53|test] loss: 1.19303
+Acc is {'acc': 0.6944444444444444}
+Inference costs:2.288501739501953s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[54|0] loss: 0.26392
+training one epoch costs:21.877554655075073s
+...[54|test] loss: 1.24045
+Acc is {'acc': 0.6875}
+Inference costs:2.2982184886932373s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[55|0] loss: 0.24847
+training one epoch costs:22.008383750915527s
+...[55|test] loss: 1.24997
+Acc is {'acc': 0.6996527777777778}
+Inference costs:2.276266098022461s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[56|0] loss: 0.21281
+training one epoch costs:21.785000324249268s
+...[56|test] loss: 1.29941
+Acc is {'acc': 0.6875}
+Inference costs:2.3059873580932617s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[57|0] loss: 0.17150
+training one epoch costs:21.826658725738525s
+...[57|test] loss: 1.26922
+Acc is {'acc': 0.7013888888888888}
+Inference costs:2.2928466796875s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[58|0] loss: 0.16221
+training one epoch costs:21.877660751342773s
+...[58|test] loss: 1.23295
+Acc is {'acc': 0.6979166666666666}
+Inference costs:2.2913978099823s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[59|0] loss: 0.16890
+training one epoch costs:21.869491815567017s
+...[59|test] loss: 1.26274
+Acc is {'acc': 0.6805555555555556}
+Inference costs:2.299790382385254s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[60|0] loss: 0.28898
+training one epoch costs:21.817272663116455s
+...[60|test] loss: 1.35969
+Acc is {'acc': 0.6805555555555556}
+Inference costs:2.2959957122802734s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[61|0] loss: 0.24716
+training one epoch costs:22.008029460906982s
+...[61|test] loss: 1.30366
+Acc is {'acc': 0.6875}
+Inference costs:2.328443765640259s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[62|0] loss: 0.19994
+training one epoch costs:22.061261892318726s
+...[62|test] loss: 1.39103
+Acc is {'acc': 0.6979166666666666}
+Inference costs:2.317598342895508s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[63|0] loss: 0.18562
+training one epoch costs:21.936481952667236s
+...[63|test] loss: 1.32891
+Acc is {'acc': 0.7083333333333334}
+Inference costs:2.2861061096191406s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[64|0] loss: 0.25059
+training one epoch costs:22.194742918014526s
+...[64|test] loss: 1.34064
+Acc is {'acc': 0.7048611111111112}
+Inference costs:2.269019842147827s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[65|0] loss: 0.30176
+training one epoch costs:21.942839860916138s
+...[65|test] loss: 1.30238
+Acc is {'acc': 0.703125}
+Inference costs:2.3412110805511475s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[66|0] loss: 0.15819
+training one epoch costs:21.89769983291626s
+...[66|test] loss: 1.29525
+Acc is {'acc': 0.7135416666666666}
+Inference costs:2.3194994926452637s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[67|0] loss: 0.24917
+training one epoch costs:22.012639045715332s
+...[67|test] loss: 1.36685
+Acc is {'acc': 0.6909722222222222}
+Inference costs:2.307494878768921s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[68|0] loss: 0.30134
+training one epoch costs:21.96052598953247s
+...[68|test] loss: 1.36097
+Acc is {'acc': 0.7083333333333334}
+Inference costs:2.320066213607788s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[69|0] loss: 0.26037
+training one epoch costs:22.075692415237427s
+...[69|test] loss: 1.39712
+Acc is {'acc': 0.7083333333333334}
+Inference costs:2.2835299968719482s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[70|0] loss: 0.23274
+training one epoch costs:21.890114784240723s
+...[70|test] loss: 1.42910
+Acc is {'acc': 0.6944444444444444}
+Inference costs:2.3108134269714355s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[71|0] loss: 0.13557
+training one epoch costs:22.093364000320435s
+...[71|test] loss: 1.51428
+Acc is {'acc': 0.6736111111111112}
+Inference costs:2.2885189056396484s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[72|0] loss: 0.25383
+training one epoch costs:21.86887526512146s
+...[72|test] loss: 1.34038
+Acc is {'acc': 0.7013888888888888}
+Inference costs:2.3017117977142334s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[73|0] loss: 0.24792
+training one epoch costs:21.855706930160522s
+...[73|test] loss: 1.50415
+Acc is {'acc': 0.6996527777777778}
+Inference costs:2.3098196983337402s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[74|0] loss: 0.11026
+training one epoch costs:21.925609588623047s
+...[74|test] loss: 1.39431
+Acc is {'acc': 0.6857638888888888}
+Inference costs:2.3946635723114014s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[75|0] loss: 0.42612
+training one epoch costs:21.94934368133545s
+...[75|test] loss: 1.48220
+Acc is {'acc': 0.6649305555555556}
+Inference costs:2.313086748123169s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[76|0] loss: 0.20342
+training one epoch costs:21.840054035186768s
+...[76|test] loss: 1.38454
+Acc is {'acc': 0.6701388888888888}
+Inference costs:2.282219648361206s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[77|0] loss: 0.21642
+training one epoch costs:21.814494371414185s
+...[77|test] loss: 1.43628
+Acc is {'acc': 0.7013888888888888}
+Inference costs:2.299050807952881s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[78|0] loss: 0.16866
+training one epoch costs:22.03114366531372s
+...[78|test] loss: 1.39592
+Acc is {'acc': 0.7152777777777778}
+Inference costs:2.3058862686157227s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[79|0] loss: 0.20519
+training one epoch costs:21.8073947429657s
+...[79|test] loss: 1.38629
+Acc is {'acc': 0.7065972222222222}
+Inference costs:2.276024103164673s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[80|0] loss: 0.20886
+training one epoch costs:21.806394338607788s
+...[80|test] loss: 1.36272
+Acc is {'acc': 0.7274305555555556}
+Inference costs:2.283796787261963s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[81|0] loss: 0.28180
+training one epoch costs:21.820358276367188s
+...[81|test] loss: 1.48744
+Acc is {'acc': 0.7065972222222222}
+Inference costs:2.285733699798584s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[82|0] loss: 0.26294
+training one epoch costs:21.822509765625s
+...[82|test] loss: 1.50776
+Acc is {'acc': 0.6875}
+Inference costs:2.312406539916992s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[83|0] loss: 0.22714
+training one epoch costs:21.81889009475708s
+...[83|test] loss: 1.41966
+Acc is {'acc': 0.6979166666666666}
+Inference costs:2.2683229446411133s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[84|0] loss: 0.06854
+training one epoch costs:22.016855001449585s
+...[84|test] loss: 1.48359
+Acc is {'acc': 0.7170138888888888}
+Inference costs:2.3508381843566895s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[85|0] loss: 0.19273
+training one epoch costs:21.821783304214478s
+...[85|test] loss: 1.40998
+Acc is {'acc': 0.7048611111111112}
+Inference costs:2.311098575592041s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[86|0] loss: 0.12435
+training one epoch costs:21.82041597366333s
+...[86|test] loss: 1.47199
+Acc is {'acc': 0.6927083333333334}
+Inference costs:2.283332586288452s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[87|0] loss: 0.09932
+training one epoch costs:21.861655712127686s
+...[87|test] loss: 1.44952
+Acc is {'acc': 0.6840277777777778}
+Inference costs:2.286374092102051s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[88|0] loss: 0.19284
+training one epoch costs:21.879831075668335s
+...[88|test] loss: 1.48274
+Acc is {'acc': 0.6892361111111112}
+Inference costs:2.2784504890441895s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[89|0] loss: 0.15980
+training one epoch costs:21.94339895248413s
+...[89|test] loss: 1.44301
+Acc is {'acc': 0.7170138888888888}
+Inference costs:2.2760963439941406s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[90|0] loss: 0.20401
+training one epoch costs:21.86484456062317s
+...[90|test] loss: 1.44007
+Acc is {'acc': 0.7065972222222222}
+Inference costs:2.3227779865264893s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[91|0] loss: 0.06788
+training one epoch costs:21.997724771499634s
+...[91|test] loss: 1.50384
+Acc is {'acc': 0.6822916666666666}
+Inference costs:2.333181142807007s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[92|0] loss: 0.09463
+training one epoch costs:21.840778589248657s
+...[92|test] loss: 1.50055
+Acc is {'acc': 0.6840277777777778}
+Inference costs:2.3225367069244385s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[93|0] loss: 0.11151
+training one epoch costs:21.91857671737671s
+...[93|test] loss: 1.53239
+Acc is {'acc': 0.7152777777777778}
+Inference costs:2.289513111114502s
+Saved: models/Scanobjectnn_4090_256_20_batch64_att_6_8.pt
+[94|0] loss: 0.29317
+training one epoch costs:21.96043848991394s
+...[94|test] loss: 1.39081
+Acc is {'acc': 0.7118055555555556}
+Inference costs:2.311289072036743s

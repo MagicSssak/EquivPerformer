@@ -1,0 +1,96 @@
+test points sampled
+15
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (k): GConvSE3Partial(structure=[(32, 1)])
+      (q): GConvSE3Partial(structure=[(32, 1)])
+      (attn): GMABSE3(n_heads=16, structure=[(32, 0), (32, 1), (32, 2)])
+    )
+    (cat): GCat(structure=[(32, 0), (33, 1), (32, 2)])
+    (project): G1x1SE3(structure=[(32, 0), (32, 1), (32, 2)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (k): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (q): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(32, 0), (32, 1), (32, 2)])
+    )
+    (cat): GCat(structure=[(64, 0), (64, 1), (64, 2)])
+    (project): G1x1SE3(structure=[(32, 0), (32, 1), (32, 2)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (k): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (q): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(32, 0), (32, 1), (32, 2)])
+    )
+    (cat): GCat(structure=[(64, 0), (64, 1), (64, 2)])
+    (project): G1x1SE3(structure=[(32, 0), (32, 1), (32, 2)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (k): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (q): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(32, 0), (32, 1), (32, 2)])
+    )
+    (cat): GCat(structure=[(64, 0), (64, 1), (64, 2)])
+    (project): G1x1SE3(structure=[(32, 0), (32, 1), (32, 2)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (k): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (q): GConvSE3Partial(structure=[(32, 0), (32, 1), (32, 2)])
+      (attn): GMABSE3(n_heads=16, structure=[(32, 0), (32, 1), (32, 2)])
+    )
+    (cat): GCat(structure=[(64, 0), (64, 1), (64, 2)])
+    (project): G1x1SE3(structure=[(32, 0), (32, 1), (32, 2)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=16, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(96, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(96, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+Scanobjectnn_4090_128_20_batch32_att_6_32
+Saved: models/Scanobjectnn_4090_128_20_batch32_att_6_32.pt
+[0|0] loss: 2.73628
+training one epoch costs:34.29885506629944s
+...[0|test] loss: 2.08638
+Acc is {'acc': 0.3923611111111111}
+Inference costs:3.6662845611572266s
+Saved: models/Scanobjectnn_4090_128_20_batch32_att_6_32.pt
+[1|0] loss: 2.26960
+training one epoch costs:33.3691132068634s
+...[1|test] loss: 1.96791
+Acc is {'acc': 0.3350694444444444}
+Inference costs:3.718895196914673s
+Saved: models/Scanobjectnn_4090_128_20_batch32_att_6_32.pt
+[2|0] loss: 1.60766
+training one epoch costs:33.31728935241699s
+...[2|test] loss: 3.02381
+Acc is {'acc': 0.1892361111111111}
+Inference costs:3.702070713043213s
+Saved: models/Scanobjectnn_4090_128_20_batch32_att_6_32.pt
+[3|0] loss: 2.75888
+training one epoch costs:33.34158158302307s
+...[3|test] loss: 19.20445
+Acc is {'acc': 0.11979166666666667}
+Inference costs:3.6697776317596436s
+Saved: models/Scanobjectnn_4090_128_20_batch32_att_6_32.pt

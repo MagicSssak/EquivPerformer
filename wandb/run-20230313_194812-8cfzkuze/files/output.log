@@ -1,0 +1,209 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 1)])
+      (q): GConvSE3Partial(structure=[(8, 1)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (9, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=8, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(72, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(72, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+256_20_batch64_att_QPartial_6_8
+Saved: models/pc3d_dgl.pt
+[0|0] loss: 2.69923
+training one epoch costs:21.162376403808594s
+...[0|test] loss: 2.12400
+Acc is {'acc': 0.2638888888888889}
+Inference costs:2.3026154041290283s
+Saved: models/pc3d_dgl.pt
+[1|0] loss: 1.77915
+training one epoch costs:20.029345750808716s
+...[1|test] loss: 1.75901
+Acc is {'acc': 0.3767361111111111}
+Inference costs:2.277616024017334s
+Saved: models/pc3d_dgl.pt
+[2|0] loss: 1.74053
+training one epoch costs:20.018462657928467s
+...[2|test] loss: 1.62152
+Acc is {'acc': 0.4722222222222222}
+Inference costs:2.2638087272644043s
+Saved: models/pc3d_dgl.pt
+[3|0] loss: 1.54719
+training one epoch costs:20.304389715194702s
+...[3|test] loss: 1.63634
+Acc is {'acc': 0.46875}
+Inference costs:2.2809107303619385s
+Saved: models/pc3d_dgl.pt
+[4|0] loss: 1.66547
+training one epoch costs:19.990201711654663s
+...[4|test] loss: 1.48495
+Acc is {'acc': 0.5}
+Inference costs:2.2906830310821533s
+Saved: models/pc3d_dgl.pt
+[5|0] loss: 1.30694
+training one epoch costs:20.08715295791626s
+...[5|test] loss: 1.46239
+Acc is {'acc': 0.515625}
+Inference costs:2.2947301864624023s
+Saved: models/pc3d_dgl.pt
+[6|0] loss: 1.60540
+training one epoch costs:20.3163104057312s
+...[6|test] loss: 1.45339
+Acc is {'acc': 0.515625}
+Inference costs:2.2580270767211914s
+Saved: models/pc3d_dgl.pt
+[7|0] loss: 1.30403
+training one epoch costs:20.023558616638184s
+...[7|test] loss: 1.31539
+Acc is {'acc': 0.5729166666666666}
+Inference costs:2.2940783500671387s
+Saved: models/pc3d_dgl.pt
+[8|0] loss: 1.13981
+training one epoch costs:20.098023653030396s
+...[8|test] loss: 1.19721
+Acc is {'acc': 0.6371527777777778}
+Inference costs:2.291350841522217s
+Saved: models/pc3d_dgl.pt
+[9|0] loss: 1.06063
+training one epoch costs:20.16156840324402s
+...[9|test] loss: 1.30296
+Acc is {'acc': 0.5902777777777778}
+Inference costs:2.3064815998077393s
+Saved: models/pc3d_dgl.pt
+[10|0] loss: 1.16365
+training one epoch costs:20.23110055923462s
+...[10|test] loss: 1.26378
+Acc is {'acc': 0.6059027777777778}
+Inference costs:2.3156237602233887s
+Saved: models/pc3d_dgl.pt
+[11|0] loss: 1.11712
+training one epoch costs:20.279261112213135s
+...[11|test] loss: 1.17534
+Acc is {'acc': 0.6128472222222222}
+Inference costs:2.274479866027832s
+Saved: models/pc3d_dgl.pt
+[12|0] loss: 1.12923
+training one epoch costs:20.000695943832397s
+...[12|test] loss: 1.27625
+Acc is {'acc': 0.5833333333333334}
+Inference costs:2.285405397415161s
+Saved: models/pc3d_dgl.pt
+[13|0] loss: 1.10263
+training one epoch costs:20.04219150543213s
+...[13|test] loss: 1.25941
+Acc is {'acc': 0.5711805555555556}
+Inference costs:2.2739806175231934s
+Saved: models/pc3d_dgl.pt
+[14|0] loss: 1.06229
+training one epoch costs:20.307820796966553s
+...[14|test] loss: 1.12384
+Acc is {'acc': 0.6614583333333334}
+Inference costs:2.306760311126709s
+Saved: models/pc3d_dgl.pt
+[15|0] loss: 0.88034
+training one epoch costs:20.16912603378296s
+...[15|test] loss: 1.12159
+Acc is {'acc': 0.6493055555555556}
+Inference costs:2.2765843868255615s
+Saved: models/pc3d_dgl.pt
+[16|0] loss: 0.85510
+training one epoch costs:20.03438925743103s
+...[16|test] loss: 1.22968
+Acc is {'acc': 0.6284722222222222}
+Inference costs:2.3058395385742188s
+Saved: models/pc3d_dgl.pt
+[17|0] loss: 0.94540
+training one epoch costs:20.04346203804016s
+...[17|test] loss: 1.16389
+Acc is {'acc': 0.6458333333333334}
+Inference costs:2.322389841079712s
+Saved: models/pc3d_dgl.pt
+[18|0] loss: 1.15655
+training one epoch costs:20.050575494766235s
+...[18|test] loss: 1.17631
+Acc is {'acc': 0.6197916666666666}
+Inference costs:2.284224510192871s
+Saved: models/pc3d_dgl.pt
+[19|0] loss: 0.74833
+training one epoch costs:20.044959545135498s
+...[19|test] loss: 1.12433
+Acc is {'acc': 0.6440972222222222}
+Inference costs:2.297903060913086s
+Saved: models/pc3d_dgl.pt
+[20|0] loss: 0.80559
+training one epoch costs:20.259196519851685s
+...[20|test] loss: 1.14335
+Acc is {'acc': 0.6423611111111112}
+Inference costs:2.3253986835479736s
+Saved: models/pc3d_dgl.pt
+[21|0] loss: 0.91954
+training one epoch costs:20.086114406585693s
+...[21|test] loss: 1.15399
+Acc is {'acc': 0.6545138888888888}
+Inference costs:2.295340061187744s
+Saved: models/pc3d_dgl.pt
+[22|0] loss: 0.66306
+training one epoch costs:20.078200578689575s
+...[22|test] loss: 1.10717
+Acc is {'acc': 0.65625}
+Inference costs:2.298522710800171s
+Saved: models/pc3d_dgl.pt

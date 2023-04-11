@@ -1,0 +1,124 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.10
+    code_path: code/pccls_run.py
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.9
+    start_time: 1679158897.273597
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 76
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 76
+      3:
+      - 3
+      - 13
+      - 16
+      - 23
+      4: 3.10.9
+      5: 0.13.10
+      8:
+      - 5
+antithetic:
+  desc: null
+  value: false
+batch_size:
+  desc: null
+  value: 16
+data:
+  desc: null
+  value: experiments/pc3d/data/
+data_str:
+  desc: null
+  value: no_bg
+device:
+  desc: null
+  value: cuda:0
+div:
+  desc: null
+  value: 1
+head:
+  desc: null
+  value: 16
+kernel:
+  desc: null
+  value: false
+log_interval:
+  desc: null
+  value: 25
+lr:
+  desc: null
+  value: 0.003
+model:
+  desc: null
+  value: SE3Transformer
+name:
+  desc: null
+  value: pc3d
+num_channels:
+  desc: null
+  value: 16
+num_class:
+  desc: null
+  value: 15
+num_degrees:
+  desc: null
+  value: 4
+num_epochs:
+  desc: null
+  value: 50000
+num_layers:
+  desc: null
+  value: 5
+num_points:
+  desc: null
+  value: 384
+num_random:
+  desc: null
+  value: 20
+num_workers:
+  desc: null
+  value: 2
+pool_all:
+  desc: null
+  value: false
+print_interval:
+  desc: null
+  value: 100
+profile:
+  desc: null
+  value: false
+restore:
+  desc: null
+  value: null
+save_dir:
+  desc: null
+  value: models
+seed:
+  desc: null
+  value: 1992
+siend:
+  desc: null
+  value: att
+simid:
+  desc: null
+  value: 1x1
+verbose:
+  desc: null
+  value: 0
+xij:
+  desc: null
+  value: add

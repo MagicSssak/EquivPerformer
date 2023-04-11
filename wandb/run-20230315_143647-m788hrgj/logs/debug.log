@@ -1,0 +1,26 @@
+2023-03-15 14:36:47,013 INFO    MainThread:2195678 [wandb_setup.py:_flush():68] Configure stats pid to 2195678
+2023-03-15 14:36:47,014 INFO    MainThread:2195678 [wandb_setup.py:_flush():68] Loading settings from /home/sssak/.config/wandb/settings
+2023-03-15 14:36:47,014 INFO    MainThread:2195678 [wandb_setup.py:_flush():68] Loading settings from /home/sssak/EquivPerformer/wandb/settings
+2023-03-15 14:36:47,014 INFO    MainThread:2195678 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-03-15 14:36:47,014 INFO    MainThread:2195678 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'pccls_run.py', 'program': '/home/sssak/EquivPerformer/pccls_run.py'}
+2023-03-15 14:36:47,014 INFO    MainThread:2195678 [wandb_init.py:_log_setup():492] Logging user logs to /home/sssak/EquivPerformer/wandb/run-20230315_143647-m788hrgj/logs/debug.log
+2023-03-15 14:36:47,015 INFO    MainThread:2195678 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sssak/EquivPerformer/wandb/run-20230315_143647-m788hrgj/logs/debug-internal.log
+2023-03-15 14:36:47,015 INFO    MainThread:2195678 [wandb_init.py:init():532] calling init triggers
+2023-03-15 14:36:47,015 INFO    MainThread:2195678 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'model': 'SE3Transformer', 'num_layers': 5, 'num_degrees': 4, 'num_channels': 16, 'div': 1, 'head': 16, 'kernel': False, 'pool_all': False, 'simid': '1x1', 'siend': 'att', 'xij': 'add', 'batch_size': 64, 'lr': 0.003, 'num_epochs': 50000, 'num_random': 20, 'num_points': 384, 'antithetic': False, 'num_class': 15, 'data': 'experiments/pc3d/data/', 'data_str': 'no_bg', 'name': 'pc3d', 'log_interval': 25, 'print_interval': 100, 'save_dir': 'models', 'restore': None, 'verbose': 0, 'num_workers': 2, 'profile': False, 'seed': 1992, 'device': device(type='cuda', index=0)}
+2023-03-15 14:36:47,016 INFO    MainThread:2195678 [wandb_init.py:init():588] starting backend
+2023-03-15 14:36:47,016 INFO    MainThread:2195678 [wandb_init.py:init():592] setting up manager
+2023-03-15 14:36:47,027 INFO    MainThread:2195678 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-15 14:36:47,034 INFO    MainThread:2195678 [wandb_init.py:init():599] backend started and connected
+2023-03-15 14:36:47,037 INFO    MainThread:2195678 [wandb_init.py:init():687] updated telemetry
+2023-03-15 14:36:47,038 INFO    MainThread:2195678 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-15 14:36:47,250 INFO    MainThread:2195678 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-15 14:36:47,395 INFO    MainThread:2195678 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-15 14:36:47,395 INFO    MainThread:2195678 [wandb_init.py:init():775] starting run threads in backend
+2023-03-15 14:36:48,773 INFO    MainThread:2195678 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-15 14:36:48,773 INFO    MainThread:2195678 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-15 14:36:48,773 INFO    MainThread:2195678 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-15 14:36:48,774 INFO    MainThread:2195678 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-15 14:36:48,774 INFO    MainThread:2195678 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-15 14:36:56,233 WARNING MsgRouterThr:2195678 [router.py:message_loop():77] message_loop has been closed

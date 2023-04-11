@@ -1,0 +1,665 @@
+test points sampled
+ModuleList(
+  (0): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 1)])
+      (q): GConvSE3Partial(structure=[(8, 1)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(8, 0), (9, 1), (8, 2), (8, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (1): GNormTFN()
+  (2): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (3): GNormTFN()
+  (4): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (5): GNormTFN()
+  (6): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (7): GNormTFN()
+  (8): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (k): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (q): GConvSE3Partial(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+      (attn): GMABSE3(n_heads=8, structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+    )
+    (cat): GCat(structure=[(16, 0), (16, 1), (16, 2), (16, 3)])
+    (project): G1x1SE3(structure=[(8, 0), (8, 1), (8, 2), (8, 3)])
+  )
+  (9): GNormTFN()
+  (10): GSE3Res(
+    (GMAB): ModuleDict(
+      (v): GConvSE3Partial(structure=[(64, 0)])
+      (k): GConvSE3Partial(structure=[(64, 0)])
+      (q): GConvSE3Partial(structure=[(64, 0)])
+      (attn): GMABSE3(n_heads=8, structure=[(64, 0)])
+    )
+    (cat): GCat(structure=[(72, 0)])
+    (project): AttentiveSelfInteractionSE3(in=[(72, 0)], out=[(64, 0)])
+  )
+)
+Begin training
+1024_20_batch8_att_6_8
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[0|0] loss: 3.70579
+[0|100] loss: 3.48474
+[0|200] loss: 3.28919
+[0|300] loss: 3.17658
+[0|400] loss: 3.07090
+[0|500] loss: 2.94927
+[0|600] loss: 2.84123
+[0|700] loss: 2.75783
+[0|800] loss: 2.68790
+[0|900] loss: 2.62434
+[0|1000] loss: 2.55931
+[0|1100] loss: 2.49797
+[0|1200] loss: 2.45118
+training one epoch costs:365.2369484901428s
+...[0|test] loss: 1.88687
+Acc is {'acc': 0.45170454545454547}
+Inference costs:41.76480269432068s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[1|0] loss: 1.32548
+[1|100] loss: 1.71556
+[1|200] loss: 1.71581
+[1|300] loss: 1.65765
+[1|400] loss: 1.67952
+[1|500] loss: 1.68190
+[1|600] loss: 1.66952
+[1|700] loss: 1.65543
+[1|800] loss: 1.64041
+[1|900] loss: 1.61471
+[1|1000] loss: 1.60817
+[1|1100] loss: 1.59879
+[1|1200] loss: 1.58851
+training one epoch costs:363.1595559120178s
+...[1|test] loss: 1.59999
+Acc is {'acc': 0.5353084415584416}
+Inference costs:41.851613998413086s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[2|0] loss: 1.54424
+[2|100] loss: 1.34570
+[2|200] loss: 1.35938
+[2|300] loss: 1.33511
+[2|400] loss: 1.32452
+[2|500] loss: 1.31372
+[2|600] loss: 1.28180
+[2|700] loss: 1.28575
+[2|800] loss: 1.28575
+[2|900] loss: 1.28763
+[2|1000] loss: 1.28287
+[2|1100] loss: 1.27109
+[2|1200] loss: 1.27397
+training one epoch costs:363.2986385822296s
+...[2|test] loss: 1.33040
+Acc is {'acc': 0.6087662337662337}
+Inference costs:41.790109634399414s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[3|0] loss: 0.91652
+[3|100] loss: 1.12247
+[3|200] loss: 1.12471
+[3|300] loss: 1.15454
+[3|400] loss: 1.13808
+[3|500] loss: 1.13462
+[3|600] loss: 1.14749
+[3|700] loss: 1.14589
+[3|800] loss: 1.14410
+[3|900] loss: 1.14561
+[3|1000] loss: 1.14314
+[3|1100] loss: 1.13697
+[3|1200] loss: 1.13464
+training one epoch costs:362.16305446624756s
+...[3|test] loss: 1.24824
+Acc is {'acc': 0.6396103896103896}
+Inference costs:41.846221923828125s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[4|0] loss: 1.01366
+[4|100] loss: 1.01554
+[4|200] loss: 1.01860
+[4|300] loss: 1.02169
+[4|400] loss: 1.01289
+[4|500] loss: 1.02921
+[4|600] loss: 1.04239
+[4|700] loss: 1.03468
+[4|800] loss: 1.04543
+[4|900] loss: 1.03830
+[4|1000] loss: 1.03774
+[4|1100] loss: 1.03203
+[4|1200] loss: 1.02726
+training one epoch costs:362.87374782562256s
+...[4|test] loss: 1.15085
+Acc is {'acc': 0.671672077922078}
+Inference costs:41.840420722961426s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[5|0] loss: 0.26319
+[5|100] loss: 0.92999
+[5|200] loss: 0.90754
+[5|300] loss: 0.94276
+[5|400] loss: 0.94434
+[5|500] loss: 0.93831
+[5|600] loss: 0.93357
+[5|700] loss: 0.94027
+[5|800] loss: 0.93702
+[5|900] loss: 0.93300
+[5|1000] loss: 0.93179
+[5|1100] loss: 0.92611
+[5|1200] loss: 0.92727
+training one epoch costs:361.05546522140503s
+...[5|test] loss: 1.09874
+Acc is {'acc': 0.6846590909090909}
+Inference costs:41.79573178291321s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[6|0] loss: 1.58540
+[6|100] loss: 0.90676
+[6|200] loss: 0.87075
+[6|300] loss: 0.85556
+[6|400] loss: 0.86812
+[6|500] loss: 0.86839
+[6|600] loss: 0.87314
+[6|700] loss: 0.87018
+[6|800] loss: 0.87231
+[6|900] loss: 0.86791
+[6|1000] loss: 0.88032
+[6|1100] loss: 0.88777
+[6|1200] loss: 0.89024
+training one epoch costs:363.5945646762848s
+...[6|test] loss: 1.06903
+Acc is {'acc': 0.702922077922078}
+Inference costs:41.92703866958618s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[7|0] loss: 0.26768
+[7|100] loss: 0.83853
+[7|200] loss: 0.80016
+[7|300] loss: 0.82703
+[7|400] loss: 0.82624
+[7|500] loss: 0.82392
+[7|600] loss: 0.82011
+[7|700] loss: 0.82534
+[7|800] loss: 0.83308
+[7|900] loss: 0.83751
+[7|1000] loss: 0.83564
+[7|1100] loss: 0.83620
+[7|1200] loss: 0.82729
+training one epoch costs:363.82343769073486s
+...[7|test] loss: 1.00887
+Acc is {'acc': 0.71875}
+Inference costs:41.99092769622803s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[8|0] loss: 1.35278
+[8|100] loss: 0.67975
+[8|200] loss: 0.73233
+[8|300] loss: 0.75176
+[8|400] loss: 0.78196
+[8|500] loss: 0.78407
+[8|600] loss: 0.78515
+[8|700] loss: 0.78882
+[8|800] loss: 0.79095
+[8|900] loss: 0.79482
+[8|1000] loss: 0.79580
+[8|1100] loss: 0.79150
+[8|1200] loss: 0.79020
+training one epoch costs:362.65257954597473s
+...[8|test] loss: 1.07235
+Acc is {'acc': 0.7061688311688312}
+Inference costs:41.945109128952026s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[9|0] loss: 0.55631
+[9|100] loss: 0.68891
+[9|200] loss: 0.72006
+[9|300] loss: 0.71121
+[9|400] loss: 0.72009
+[9|500] loss: 0.72293
+[9|600] loss: 0.72754
+[9|700] loss: 0.72888
+[9|800] loss: 0.73187
+[9|900] loss: 0.73131
+[9|1000] loss: 0.74065
+[9|1100] loss: 0.74603
+[9|1200] loss: 0.74719
+training one epoch costs:360.2679011821747s
+...[9|test] loss: 0.97165
+Acc is {'acc': 0.7260551948051948}
+Inference costs:41.912296772003174s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[10|0] loss: 0.87022
+[10|100] loss: 0.77041
+[10|200] loss: 0.74231
+[10|300] loss: 0.71772
+[10|400] loss: 0.69819
+[10|500] loss: 0.70066
+[10|600] loss: 0.70225
+[10|700] loss: 0.71729
+[10|800] loss: 0.71558
+[10|900] loss: 0.71973
+[10|1000] loss: 0.72684
+[10|1100] loss: 0.72601
+[10|1200] loss: 0.72819
+training one epoch costs:361.9107451438904s
+...[10|test] loss: 1.05155
+Acc is {'acc': 0.71875}
+Inference costs:41.928807497024536s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[11|0] loss: 0.32588
+[11|100] loss: 0.65184
+[11|200] loss: 0.67887
+[11|300] loss: 0.69871
+[11|400] loss: 0.67471
+[11|500] loss: 0.67189
+[11|600] loss: 0.67740
+[11|700] loss: 0.68864
+[11|800] loss: 0.69809
+[11|900] loss: 0.69525
+[11|1000] loss: 0.68879
+[11|1100] loss: 0.69453
+[11|1200] loss: 0.69418
+training one epoch costs:362.53083896636963s
+...[11|test] loss: 0.99643
+Acc is {'acc': 0.7195616883116883}
+Inference costs:41.82229661941528s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[12|0] loss: 0.90719
+[12|100] loss: 0.62870
+[12|200] loss: 0.65549
+[12|300] loss: 0.63426
+[12|400] loss: 0.63520
+[12|500] loss: 0.64562
+[12|600] loss: 0.64140
+[12|700] loss: 0.65133
+[12|800] loss: 0.64930
+[12|900] loss: 0.65127
+[12|1000] loss: 0.64859
+[12|1100] loss: 0.65497
+[12|1200] loss: 0.65719
+training one epoch costs:362.5772421360016s
+...[12|test] loss: 0.97515
+Acc is {'acc': 0.7272727272727273}
+Inference costs:41.83649659156799s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[13|0] loss: 0.47326
+[13|100] loss: 0.60759
+[13|200] loss: 0.58682
+[13|300] loss: 0.59472
+[13|400] loss: 0.58572
+[13|500] loss: 0.59554
+[13|600] loss: 0.60844
+[13|700] loss: 0.61791
+[13|800] loss: 0.63230
+[13|900] loss: 0.63494
+[13|1000] loss: 0.63716
+[13|1100] loss: 0.63857
+[13|1200] loss: 0.64091
+training one epoch costs:361.9499235153198s
+...[13|test] loss: 0.98107
+Acc is {'acc': 0.716314935064935}
+Inference costs:41.83913564682007s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[14|0] loss: 0.69877
+[14|100] loss: 0.63709
+[14|200] loss: 0.60087
+[14|300] loss: 0.61096
+[14|400] loss: 0.60424
+[14|500] loss: 0.60675
+[14|600] loss: 0.62145
+[14|700] loss: 0.62828
+[14|800] loss: 0.62322
+[14|900] loss: 0.62217
+[14|1000] loss: 0.62488
+[14|1100] loss: 0.62784
+[14|1200] loss: 0.62704
+training one epoch costs:364.82084703445435s
+...[14|test] loss: 0.94307
+Acc is {'acc': 0.7459415584415584}
+Inference costs:41.7869336605072s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[15|0] loss: 0.55446
+[15|100] loss: 0.62212
+[15|200] loss: 0.56827
+[15|300] loss: 0.57413
+[15|400] loss: 0.56735
+[15|500] loss: 0.56992
+[15|600] loss: 0.57637
+[15|700] loss: 0.57889
+[15|800] loss: 0.58834
+[15|900] loss: 0.60113
+[15|1000] loss: 0.60310
+[15|1100] loss: 0.60167
+[15|1200] loss: 0.60694
+training one epoch costs:363.0266013145447s
+...[15|test] loss: 0.94697
+Acc is {'acc': 0.747564935064935}
+Inference costs:41.954463720321655s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[16|0] loss: 0.18819
+[16|100] loss: 0.57367
+[16|200] loss: 0.53881
+[16|300] loss: 0.51580
+[16|400] loss: 0.52074
+[16|500] loss: 0.52938
+[16|600] loss: 0.54280
+[16|700] loss: 0.55636
+[16|800] loss: 0.55957
+[16|900] loss: 0.56037
+[16|1000] loss: 0.55819
+[16|1100] loss: 0.58165
+[16|1200] loss: 0.61053
+training one epoch costs:363.37795782089233s
+...[16|test] loss: 1.25405
+Acc is {'acc': 0.6513798701298701}
+Inference costs:41.95884108543396s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[17|0] loss: 0.18417
+[17|100] loss: 0.90410
+[17|200] loss: 0.94885
+[17|300] loss: 0.93470
+[17|400] loss: 0.90047
+[17|500] loss: 0.86831
+[17|600] loss: 0.83854
+[17|700] loss: 0.81666
+[17|800] loss: 0.80654
+[17|900] loss: 0.80029
+[17|1000] loss: 0.78612
+[17|1100] loss: 0.77622
+[17|1200] loss: 0.76660
+training one epoch costs:362.72305035591125s
+...[17|test] loss: 0.94408
+Acc is {'acc': 0.7337662337662337}
+Inference costs:41.96101784706116s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[18|0] loss: 1.06053
+[18|100] loss: 0.57113
+[18|200] loss: 0.56923
+[18|300] loss: 0.58017
+[18|400] loss: 0.58833
+[18|500] loss: 0.58337
+[18|600] loss: 0.58037
+[18|700] loss: 0.58689
+[18|800] loss: 0.59724
+[18|900] loss: 0.58965
+[18|1000] loss: 0.59489
+[18|1100] loss: 0.59225
+[18|1200] loss: 0.59531
+training one epoch costs:363.0440125465393s
+...[18|test] loss: 0.89882
+Acc is {'acc': 0.7443181818181818}
+Inference costs:42.175949573516846s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[19|0] loss: 0.33665
+[19|100] loss: 0.53496
+[19|200] loss: 0.50809
+[19|300] loss: 0.52183
+[19|400] loss: 0.53800
+[19|500] loss: 0.54512
+[19|600] loss: 0.54374
+[19|700] loss: 0.54401
+[19|800] loss: 0.54023
+[19|900] loss: 0.54057
+[19|1000] loss: 0.55067
+[19|1100] loss: 0.55187
+[19|1200] loss: 0.55304
+training one epoch costs:362.87754583358765s
+...[19|test] loss: 0.86887
+Acc is {'acc': 0.7564935064935064}
+Inference costs:41.86177110671997s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[20|0] loss: 0.54835
+[20|100] loss: 0.54850
+[20|200] loss: 0.51713
+[20|300] loss: 0.55063
+[20|400] loss: 0.54587
+[20|500] loss: 0.54247
+[20|600] loss: 0.53773
+[20|700] loss: 0.53368
+[20|800] loss: 0.53387
+[20|900] loss: 0.52532
+[20|1000] loss: 0.52563
+[20|1100] loss: 0.51655
+[20|1200] loss: 0.52172
+training one epoch costs:363.4773063659668s
+...[20|test] loss: 0.85235
+Acc is {'acc': 0.768262987012987}
+Inference costs:41.95158863067627s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[21|0] loss: 0.56059
+[21|100] loss: 0.51797
+[21|200] loss: 0.49932
+[21|300] loss: 0.51621
+[21|400] loss: 0.49964
+[21|500] loss: 0.50582
+[21|600] loss: 0.51022
+[21|700] loss: 0.50645
+[21|800] loss: 0.51131
+[21|900] loss: 0.50868
+[21|1000] loss: 0.51267
+[21|1100] loss: 0.51482
+[21|1200] loss: 0.51654
+training one epoch costs:362.63141775131226s
+...[21|test] loss: 0.91194
+Acc is {'acc': 0.7536525974025974}
+Inference costs:41.92730522155762s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[22|0] loss: 0.58753
+[22|100] loss: 0.43176
+[22|200] loss: 0.41042
+[22|300] loss: 0.43455
+[22|400] loss: 0.45398
+[22|500] loss: 0.45230
+[22|600] loss: 0.45783
+[22|700] loss: 0.45818
+[22|800] loss: 0.47419
+[22|900] loss: 0.47804
+[22|1000] loss: 0.48390
+[22|1100] loss: 0.48970
+[22|1200] loss: 0.49692
+training one epoch costs:362.0698230266571s
+...[22|test] loss: 0.94091
+Acc is {'acc': 0.7406655844155844}
+Inference costs:41.95289635658264s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[23|0] loss: 1.36367
+[23|100] loss: 0.50304
+[23|200] loss: 0.48360
+[23|300] loss: 0.46509
+[23|400] loss: 0.47614
+[23|500] loss: 0.47205
+[23|600] loss: 0.46850
+[23|700] loss: 0.46764
+[23|800] loss: 0.47388
+[23|900] loss: 0.48030
+[23|1000] loss: 0.48449
+[23|1100] loss: 0.48793
+[23|1200] loss: 0.49024
+training one epoch costs:363.84816694259644s
+...[23|test] loss: 0.95452
+Acc is {'acc': 0.7382305194805194}
+Inference costs:41.88735389709473s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[24|0] loss: 0.72294
+[24|100] loss: 0.41522
+[24|200] loss: 0.43413
+[24|300] loss: 0.43525
+[24|400] loss: 0.43774
+[24|500] loss: 0.44101
+[24|600] loss: 0.44272
+[24|700] loss: 0.43860
+[24|800] loss: 0.43857
+[24|900] loss: 0.44549
+[24|1000] loss: 0.45140
+[24|1100] loss: 0.45664
+[24|1200] loss: 0.46086
+training one epoch costs:363.2252175807953s
+...[24|test] loss: 0.89325
+Acc is {'acc': 0.7512175324675324}
+Inference costs:42.06235885620117s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[25|0] loss: 0.23511
+[25|100] loss: 0.42424
+[25|200] loss: 0.42316
+[25|300] loss: 0.42038
+[25|400] loss: 0.42056
+[25|500] loss: 0.43206
+[25|600] loss: 0.43586
+[25|700] loss: 0.44098
+[25|800] loss: 0.43740
+[25|900] loss: 0.43449
+[25|1000] loss: 0.44023
+[25|1100] loss: 0.44550
+[25|1200] loss: 0.44670
+training one epoch costs:363.1454372406006s
+...[25|test] loss: 0.87931
+Acc is {'acc': 0.7674512987012987}
+Inference costs:41.7860472202301s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[26|0] loss: 0.09504
+[26|100] loss: 0.41393
+[26|200] loss: 0.39778
+[26|300] loss: 0.40726
+[26|400] loss: 0.40201
+[26|500] loss: 0.41924
+[26|600] loss: 0.41722
+[26|700] loss: 0.42390
+[26|800] loss: 0.43469
+[26|900] loss: 0.43379
+[26|1000] loss: 0.43733
+[26|1100] loss: 0.44034
+[26|1200] loss: 0.44114
+training one epoch costs:363.11551451683044s
+...[26|test] loss: 0.86536
+Acc is {'acc': 0.7763798701298701}
+Inference costs:41.84737300872803s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[27|0] loss: 0.23997
+[27|100] loss: 0.35025
+[27|200] loss: 0.34671
+[27|300] loss: 0.37066
+[27|400] loss: 0.39800
+[27|500] loss: 0.40583
+[27|600] loss: 0.41862
+[27|700] loss: 0.42405
+[27|800] loss: 0.42265
+[27|900] loss: 0.41800
+[27|1000] loss: 0.43335
+[27|1100] loss: 0.44175
+[27|1200] loss: 0.44680
+training one epoch costs:362.7718393802643s
+...[27|test] loss: 0.87363
+Acc is {'acc': 0.7597402597402597}
+Inference costs:42.073243141174316s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[28|0] loss: 0.58146
+[28|100] loss: 0.39588
+[28|200] loss: 0.40843
+[28|300] loss: 0.41158
+[28|400] loss: 0.43208
+[28|500] loss: 0.43822
+[28|600] loss: 0.43220
+[28|700] loss: 0.42767
+[28|800] loss: 0.43177
+[28|900] loss: 0.43347
+[28|1000] loss: 0.43064
+[28|1100] loss: 0.43053
+[28|1200] loss: 0.43014
+training one epoch costs:361.9850797653198s
+...[28|test] loss: 0.91923
+Acc is {'acc': 0.7621753246753247}
+Inference costs:41.80799174308777s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[29|0] loss: 0.05476
+[29|100] loss: 0.35792
+[29|200] loss: 0.37598
+[29|300] loss: 0.36617
+[29|400] loss: 0.37989
+[29|500] loss: 0.37092
+[29|600] loss: 0.37493
+[29|700] loss: 0.38115
+[29|800] loss: 0.37912
+[29|900] loss: 0.39147
+[29|1000] loss: 0.40066
+[29|1100] loss: 0.41709
+[29|1200] loss: 0.43286
+training one epoch costs:364.22380113601685s
+...[29|test] loss: 0.96445
+Acc is {'acc': 0.7459415584415584}
+Inference costs:41.74715971946716s
+Saved: models/pc3d1024_20_batch8_att_6_8.pt
+[30|0] loss: 1.12790
+[30|100] loss: 0.44031
+[30|200] loss: 0.48169
+[30|300] loss: 0.48087
+[30|400] loss: 0.49644
+[30|500] loss: 0.47398
+[30|600] loss: 0.46828
+[30|700] loss: 0.46996
+[30|800] loss: 0.46517
+[30|900] loss: 0.46367
+> /home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py(66)handler()
+-> _error_if_any_worker_fails()
+(Pdb)
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 241, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 221, in main
+    train_loss = train_epoch(epoch, model, task_loss, train_loader, optimizer, scheduler, FLAGS)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 72, in train_epoch
+    loss.backward()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 270062) is killed by signal: Killed.
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 241, in <module>
+    main(FLAGS, UNPARSED_ARGV)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 221, in main
+    train_loss = train_epoch(epoch, model, task_loss, train_loader, optimizer, scheduler, FLAGS)
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 72, in train_epoch
+    loss.backward()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 270062) is killed by signal: Killed.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sssak/EquivPerformer/pccls_run.py", line 245, in <module>
+    pdb.post_mortem()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/pdb.py", line 1648, in post_mortem
+    p.interaction(None, t)
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/sssak/anaconda3/envs/cuda/lib/python3.10/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+OSError: [Errno 9] Bad file descriptor
